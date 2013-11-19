@@ -1,0 +1,260 @@
+<!doctype html>
+<html> <head>
+    <meta charset="utf-8" />
+    <title>jQuery UI Dialog - Modal form</title>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <link rel="stylesheet" href="/resources/demos/style.css" />
+    <style>
+        body { font-size: 62.5%; }
+        label, input { display:block; }
+        input.text { margin-bottom:12px; width:95%; padding: .4em; }
+        fieldset { padding:0; border:0; margin-top:25px; }
+        h1 { font-size: 1.2em; margin: .6em 0; }
+        div#users-contain { width: 800px; margin: 20px 0; }
+        div#users-contain table { margin: 1em 0; border-collapse: collapse; width: 100%; }
+        div#users-contain table td, div#users-contain table th { border: 1px solid #eee; padding: .6em 10px; text-align: left; }
+        .ui-dialog .ui-state-error { padding: .3em; }
+        .validateTips { border: 1px solid transparent; padding: 0.3em; }
+        </style>
+    <script>
+        $(function() {
+                 });
+        </script>
+</head><body>
+	<h1 align="center">Javascript Acces SQLite Demo</h1>
+	<div id="dialog-form">
+        <p class="validateTips">All form fields are required.</p>
+        <form>
+            <fieldset>
+                <label for="nickname">Nickname</label>
+                <input type="text" name="nickname" id="nickname" class="text ui-widget-content ui-corner-all" />
+
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email" value="" class="text ui-widget-content ui-corner-all" />
+                
+                <label for="live_area">Live Area</label>
+                <input type="text" name="live_area" id="live_area" value="" class="text ui-widget-content ui-corner-all" />
+            </fieldset>
+        </form>
+    </div>
+    <div id="users-contain" class="ui-widget">
+        <h1>List Existing Users :</h1>
+        <table id="users" class="ui-widget ui-widget-content" width="100%">
+            <thead>
+                <tr class="ui-widget-header ">
+                    <th>Nickname</th>
+                    <th>Birth Month</th>
+                    <th>Email</th>
+                    <th>Live Area</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="content"></tbody>
+        </table>
+    </div>
+   <!-- <button id="create-user">Create new user</button> -->
+    
+    <script>
+	window.onerror = function(err) {
+		log('window.onerror: ' + err)
+	}
+        document.addEventListener('WebViewJavascriptBridgeReady', onBridgeReady, false);
+        
+        var Brigers;
+	function onBridgeReady(event) {
+		var bridge = event.bridge;
+        Brigers = bridge;
+		var uniqueId = 1;
+		function log(message, data) {
+			var log = document.getElementById('log')
+			var el = document.createElement('div')
+			el.className = 'logLine'
+			el.innerHTML = uniqueId++ + '. ' + message + (data ? ':<br/>' + JSON.stringify(data) : '')
+			if (log.children.length) { log.insertBefore(el, log.children[0]) }
+			else { log.appendChild(el) }
+		}
+		bridge.init(function(message, responseCallback) {
+			log('JS got a message', message)
+			var data = { 'Javascript Responds':'Wee!' }
+			log('JS responding with', data)
+			responseCallback(data)
+		})
+
+//		bridge.registerHandler('testJavascriptHandler', function(data, responseCallback) {
+//			log('ObjC called testJavascriptHandler with', data)
+//			var responseData = { 'Javascript Says':'Right back atcha!' }
+//			log('JS responding with', responseData)
+//			responseCallback(responseData)
+//		})
+
+        
+		document.body.appendChild(document.createElement('br'))
+        // Get List User
+		var callbackButton = document.getElementById('buttons').appendChild(document.createElement('button'))
+		callbackButton.innerHTML = 'List User'
+		callbackButton.onclick = function(e) {
+			e.preventDefault()
+//			log('JS calling handler "getListUser"')
+            getListuser();
+        }
+        document.body.appendChild(document.createElement('br'))
+        
+        // Create
+		var callbackButton = document.getElementById('buttons').appendChild(document.createElement('button'))
+		callbackButton.innerHTML = 'Create'
+		callbackButton.onclick = function(e) {
+			e.preventDefault();
+           
+            setLayoutCreateDialog();
+             $( "#dialog-form" ).dialog( "open" );
+//			log('JS calling handler "CreateUser"')
+					}
+        document.body.appendChild(document.createElement('br'))
+        
+        // Update
+//		var callbackButton = document.getElementById('buttons').appendChild(document.createElement('button'))
+//		callbackButton.innerHTML = 'Update'
+//		callbackButton.onclick = function(e) {
+//			e.preventDefault()
+//			bridge.callHandler('updateUser', {'foo': 'bar'}, function(response) {
+//                               log('JS got response Edit', response)
+//                               })
+//		}
+        document.body.appendChild(document.createElement('br'))
+        
+        // Get Delete
+		var callbackButton = document.getElementById('buttons').appendChild(document.createElement('button'))
+		callbackButton.innerHTML = 'Clear All'
+		callbackButton.onclick = function(e) {
+			e.preventDefault()
+			bridge.callHandler('deleteUser', {}, function(response) {
+                                getListuser();
+                               })
+		}
+        
+        
+        // GET LIST USER
+        getListuser();
+        
+        // ADD CREATE USER DIALOG
+
+        
+        
+        setLayoutCreateDialog();
+                
+	};
+        function getListuser(){
+            Brigers.callHandler('getListUser', {'foo': 'bar'}, function(response) {
+                               $( "#content" ).empty();
+                               for( var i =0; i < response.length; i++){
+                               
+                               $( "#content" ).append( "<tr>" +
+                                                      "<td>" + response[i].nickname	+ "</td>" +
+                                                      "<td>" + response[i].birth_month + "</td>" +
+                                                      "<td>" + response[i].mail + "</td>" +
+                                                      "<td>" + response[i].live_area + "</td>" +
+                                                      "<td style='color:blue;' onclick=\"edit("+response[i].id+",'"+response[i].nickname+"', '"+response[i].birth_month+"', '"+response[i].mail+"', '"+response[i].live_area+"')\">Edit</td>" +
+                                                      "</tr>" );
+                               }
+                               })
+        }
+        
+        function setLayoutCreateDialog(){
+            $("#dialog-form").removeAttr("title");
+            $("#dialog-form").attr("title","Add/Edit user");
+            var nickname = $( "#nickname" ),
+            birth_month = $( "#birth_month" ),
+            email = $( "#email" ),
+            live_area = $( "#live_area" );
+            
+            allFields = $( [] ).add( nickname ).add( birth_month ).add( email ).add( live_area );
+            
+            $( "#dialog-form" ).dialog({
+                                       autoOpen: false,
+                                       height: 300,
+                                       width: 350,
+                                       modal: true,
+                                       buttons: {
+                                       "Create an account": function() {
+                                       
+                                       var user_info = {
+                                       "nickname":nickname.val(),
+                                       "birth_month":"11/1982",
+                                       "mail":email.val(),
+                                       "live_area":live_area.val()
+                                       };
+                                       //                                    log('JS CREAAAAAAAA', user_info);
+                                       Brigers.callHandler('createUser', user_info, function(response) {
+                                                          
+                                                          getListuser();
+                                                          });
+                                       
+                                       $( this ).dialog( "close" );
+                                       },
+                                       
+                                       Cancel: function() {
+                                       $( this ).dialog( "close" );
+                                       }
+                                       },
+                                       close: function() {
+                                       allFields.val( "" ).removeClass( "ui-state-error" );
+                                       }
+                                       });
+        }
+
+
+        
+        function edit(id,param_nickname, param_birth_month, param_mail, param_live_area){
+            $("#dialog-form").removeAttr("title");
+            $("#dialog-form").attr("title","Add/Edit user");
+            $( "#nickname" ).val(param_nickname);
+            $( "#birth_month" ).val(param_birth_month);
+            $( "#email" ).val(param_mail);
+            $( "#live_area" ).val(param_live_area);
+            var nickname = $( "#nickname" ),
+            birth_month = $( "#birth_month" ),
+            email = $( "#email" ),
+            live_area = $( "#live_area" );
+//            allFields = $( [] ).add( nickname ).add( birth_month ).add( email ).add( live_area );
+            
+            $( "#dialog-form" ).dialog({
+                                       autoOpen: false,
+                                       height: 300,
+                                       width: 350,
+                                       modal: true,
+                                       buttons: {
+                                       "Edit": function() {
+                                       
+                                       var user_info = {
+                                       "id":id,
+                                       "nickname":nickname.val(),
+                                       "birth_month":"11/1982",
+                                       "mail":email.val(),
+                                       "live_area":live_area.val()
+                                       };
+                                       
+                                       Brigers.callHandler('updateUser', user_info, function(response) {
+                                                          
+                                                          getListuser();
+                                                          });
+                                       
+                                       $( this ).dialog( "close" );
+                                       },
+                                       
+                                       Cancel: function() {
+                                       $( this ).dialog( "close" );
+                                       }
+                                       },
+                                       close: function() {
+                                       allFields.val( "" ).removeClass( "ui-state-error" );
+                                       }
+                                       });
+            $( "#dialog-form" ).dialog( "open" );
+//            alert(id + a + b+ c +d);
+        }
+        
+	</script>
+	<div id='buttons'></div> <div id='log'></div>
+</body></html>

@@ -1,0 +1,302 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		11888A5F14428F8900B0EF02 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11888A5E14428F8900B0EF02 /* UIKit.framework */; };
+		11888A6114428F8900B0EF02 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11888A6014428F8900B0EF02 /* Foundation.framework */; };
+		11888A6314428F8900B0EF02 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11888A6214428F8900B0EF02 /* CoreGraphics.framework */; };
+		11888A6914428F8900B0EF02 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 11888A6714428F8900B0EF02 /* InfoPlist.strings */; };
+		11888A6B14428F8900B0EF02 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 11888A6A14428F8900B0EF02 /* main.m */; };
+		11888A6F14428F8900B0EF02 /* TestShakeIphoneAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 11888A6E14428F8900B0EF02 /* TestShakeIphoneAppDelegate.m */; };
+		11888A7214428F8900B0EF02 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11888A7014428F8900B0EF02 /* MainWindow.xib */; };
+		11888A7514428F8900B0EF02 /* TestShakeIphoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11888A7414428F8900B0EF02 /* TestShakeIphoneViewController.m */; };
+		11888A7814428F8900B0EF02 /* TestShakeIphoneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11888A7614428F8900B0EF02 /* TestShakeIphoneViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		11888A5A14428F8900B0EF02 /* TestShakeIphone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestShakeIphone.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		11888A5E14428F8900B0EF02 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		11888A6014428F8900B0EF02 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		11888A6214428F8900B0EF02 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		11888A6614428F8900B0EF02 /* TestShakeIphone-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestShakeIphone-Info.plist"; sourceTree = "<group>"; };
+		11888A6814428F8900B0EF02 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		11888A6A14428F8900B0EF02 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		11888A6C14428F8900B0EF02 /* TestShakeIphone-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestShakeIphone-Prefix.pch"; sourceTree = "<group>"; };
+		11888A6D14428F8900B0EF02 /* TestShakeIphoneAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestShakeIphoneAppDelegate.h; sourceTree = "<group>"; };
+		11888A6E14428F8900B0EF02 /* TestShakeIphoneAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestShakeIphoneAppDelegate.m; sourceTree = "<group>"; };
+		11888A7114428F8900B0EF02 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		11888A7314428F8900B0EF02 /* TestShakeIphoneViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestShakeIphoneViewController.h; sourceTree = "<group>"; };
+		11888A7414428F8900B0EF02 /* TestShakeIphoneViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestShakeIphoneViewController.m; sourceTree = "<group>"; };
+		11888A7714428F8900B0EF02 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/TestShakeIphoneViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		11888A5714428F8900B0EF02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11888A5F14428F8900B0EF02 /* UIKit.framework in Frameworks */,
+				11888A6114428F8900B0EF02 /* Foundation.framework in Frameworks */,
+				11888A6314428F8900B0EF02 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11888A4F14428F8900B0EF02 = {
+			isa = PBXGroup;
+			children = (
+				11888A6414428F8900B0EF02 /* TestShakeIphone */,
+				11888A5D14428F8900B0EF02 /* Frameworks */,
+				11888A5B14428F8900B0EF02 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		11888A5B14428F8900B0EF02 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				11888A5A14428F8900B0EF02 /* TestShakeIphone.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		11888A5D14428F8900B0EF02 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				11888A5E14428F8900B0EF02 /* UIKit.framework */,
+				11888A6014428F8900B0EF02 /* Foundation.framework */,
+				11888A6214428F8900B0EF02 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		11888A6414428F8900B0EF02 /* TestShakeIphone */ = {
+			isa = PBXGroup;
+			children = (
+				11888A6D14428F8900B0EF02 /* TestShakeIphoneAppDelegate.h */,
+				11888A6E14428F8900B0EF02 /* TestShakeIphoneAppDelegate.m */,
+				11888A7014428F8900B0EF02 /* MainWindow.xib */,
+				11888A7314428F8900B0EF02 /* TestShakeIphoneViewController.h */,
+				11888A7414428F8900B0EF02 /* TestShakeIphoneViewController.m */,
+				11888A7614428F8900B0EF02 /* TestShakeIphoneViewController.xib */,
+				11888A6514428F8900B0EF02 /* Supporting Files */,
+			);
+			path = TestShakeIphone;
+			sourceTree = "<group>";
+		};
+		11888A6514428F8900B0EF02 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				11888A6614428F8900B0EF02 /* TestShakeIphone-Info.plist */,
+				11888A6714428F8900B0EF02 /* InfoPlist.strings */,
+				11888A6A14428F8900B0EF02 /* main.m */,
+				11888A6C14428F8900B0EF02 /* TestShakeIphone-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		11888A5914428F8900B0EF02 /* TestShakeIphone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11888A7B14428F8900B0EF02 /* Build configuration list for PBXNativeTarget "TestShakeIphone" */;
+			buildPhases = (
+				11888A5614428F8900B0EF02 /* Sources */,
+				11888A5714428F8900B0EF02 /* Frameworks */,
+				11888A5814428F8900B0EF02 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestShakeIphone;
+			productName = TestShakeIphone;
+			productReference = 11888A5A14428F8900B0EF02 /* TestShakeIphone.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		11888A5114428F8900B0EF02 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 11888A5414428F8900B0EF02 /* Build configuration list for PBXProject "TestShakeIphone" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 11888A4F14428F8900B0EF02;
+			productRefGroup = 11888A5B14428F8900B0EF02 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				11888A5914428F8900B0EF02 /* TestShakeIphone */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		11888A5814428F8900B0EF02 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11888A6914428F8900B0EF02 /* InfoPlist.strings in Resources */,
+				11888A7214428F8900B0EF02 /* MainWindow.xib in Resources */,
+				11888A7814428F8900B0EF02 /* TestShakeIphoneViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		11888A5614428F8900B0EF02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11888A6B14428F8900B0EF02 /* main.m in Sources */,
+				11888A6F14428F8900B0EF02 /* TestShakeIphoneAppDelegate.m in Sources */,
+				11888A7514428F8900B0EF02 /* TestShakeIphoneViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		11888A6714428F8900B0EF02 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				11888A6814428F8900B0EF02 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		11888A7014428F8900B0EF02 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				11888A7114428F8900B0EF02 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		11888A7614428F8900B0EF02 /* TestShakeIphoneViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				11888A7714428F8900B0EF02 /* en */,
+			);
+			name = TestShakeIphoneViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		11888A7914428F8900B0EF02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Dat Nguyen mau (J63P7BUFES)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Dat Nguyen mau (J63P7BUFES)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				PROVISIONING_PROFILE = "F95FDF00-EB93-4FDC-AFBF-3E7B9788E023";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "F95FDF00-EB93-4FDC-AFBF-3E7B9788E023";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		11888A7A14428F8900B0EF02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Dat Nguyen mau (J63P7BUFES)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Dat Nguyen mau (J63P7BUFES)";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "F95FDF00-EB93-4FDC-AFBF-3E7B9788E023";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "F95FDF00-EB93-4FDC-AFBF-3E7B9788E023";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		11888A7C14428F8900B0EF02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Dat Nguyen mau (J63P7BUFES)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Dat Nguyen mau (J63P7BUFES)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TestShakeIphone/TestShakeIphone-Prefix.pch";
+				INFOPLIST_FILE = "TestShakeIphone/TestShakeIphone-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "F95FDF00-EB93-4FDC-AFBF-3E7B9788E023";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "F95FDF00-EB93-4FDC-AFBF-3E7B9788E023";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		11888A7D14428F8900B0EF02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Dat Nguyen mau (J63P7BUFES)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Dat Nguyen mau (J63P7BUFES)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TestShakeIphone/TestShakeIphone-Prefix.pch";
+				INFOPLIST_FILE = "TestShakeIphone/TestShakeIphone-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "F95FDF00-EB93-4FDC-AFBF-3E7B9788E023";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "F95FDF00-EB93-4FDC-AFBF-3E7B9788E023";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		11888A5414428F8900B0EF02 /* Build configuration list for PBXProject "TestShakeIphone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11888A7914428F8900B0EF02 /* Debug */,
+				11888A7A14428F8900B0EF02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11888A7B14428F8900B0EF02 /* Build configuration list for PBXNativeTarget "TestShakeIphone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11888A7C14428F8900B0EF02 /* Debug */,
+				11888A7D14428F8900B0EF02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 11888A5114428F8900B0EF02 /* Project object */;
+}

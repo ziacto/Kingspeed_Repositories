@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'LibrariesDatNM' target in the 'LibrariesDatNM' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif

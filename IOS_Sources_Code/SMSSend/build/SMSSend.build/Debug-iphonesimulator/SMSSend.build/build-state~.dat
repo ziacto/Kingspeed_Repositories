@@ -1,0 +1,298 @@
+TSMSSend
+v7
+r0
+t299591318.320351
+cCheck dependencies
+cProcessInfoPlistFile /Users/Amrita/Documents/SMSSend/build/Debug-iphonesimulator/SMSSend.app/Info.plist SMSSend-Info.plist
+cCompileXIB /Users/Amrita/Documents/SMSSend/MainWindow.xib
+cCompileXIB /Users/Amrita/Documents/SMSSend/SMSSendViewController.xib
+cProcessPCH /var/folders/Ix/Ixt-AUniFJ0+ciCCy+GXh++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SMSSend_Prefix-dgvkzjjzemrelcbdrnyncdwirmzm/SMSSend_Prefix.pch.gch SMSSend_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/SMSSend.build/Debug-iphonesimulator/SMSSend.build/Objects-normal/i386/main.o /Users/Amrita/Documents/SMSSend/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/SMSSend.build/Debug-iphonesimulator/SMSSend.build/Objects-normal/i386/SMSSendAppDelegate.o /Users/Amrita/Documents/SMSSend/Classes/SMSSendAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/SMSSend.build/Debug-iphonesimulator/SMSSend.build/Objects-normal/i386/SMSSendViewController.o /Users/Amrita/Documents/SMSSend/Classes/SMSSendViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk
+c000000004C120D340000000000000132
+t1276251444
+s306
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004BFDFE39000000000027C7D0
+t1274936889
+s2607056
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004BFDFE7C000000000029D5D0
+t1274936956
+s2741712
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004BFDFE6E0000000000001466
+t1274936942
+s5222
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/MessageUI.framework/Headers/MFMessageComposeViewController.h
+c000000004C0472810000000000001527
+t1275359873
+s5415
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/MessageUI.framework/Headers/MessageUI.h
+c000000004C04728100000000000000CD
+t1275359873
+s205
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/MessageUI.framework/MessageUI
+c000000004C04728D0000000000090330
+t1275359885
+s590640
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004C0470BB00000000000009CD
+t1275359419
+s2509
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004C0471620000000001D47210
+t1275359586
+s30700048
+
+N/Users/Amrita/Documents/SMSSend/Classes/SMSSendAppDelegate.h
+c000000004C2B2C5500000000000001E8
+t1277897813
+s488
+i<UIKit/UIKit.h>
+
+N/Users/Amrita/Documents/SMSSend/Classes/SMSSendAppDelegate.m
+c000000004C2B2C550000000000000A94
+t1277897813
+s2708
+i"SMSSendAppDelegate.h"
+i"SMSSendViewController.h"
+
+N/Users/Amrita/Documents/SMSSend/Classes/SMSSendViewController.h
+c000000004C2B2E770000000000000197
+t1277898359
+s407
+i<UIKit/UIKit.h>
+i<MessageUI/MessageUI.h>
+i<MessageUI/MFMessageComposeViewController.h>
+
+N/Users/Amrita/Documents/SMSSend/Classes/SMSSendViewController.m
+c000000004C2B2F0F00000000000009D1
+t1277898511
+s2513
+i"SMSSendViewController.h"
+
+N/Users/Amrita/Documents/SMSSend/MainWindow.xib
+c000000004C2B2C550000000000004E29
+t1277897813
+s20009
+
+N/Users/Amrita/Documents/SMSSend/SMSSendViewController.xib
+c000000004C2B2EB9000000000000472F
+t1277898425
+s18223
+
+N/Users/Amrita/Documents/SMSSend/SMSSend_Prefix.pch
+c000000004C2B2C5500000000000000B7
+t1277897813
+s183
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/Amrita/Documents/SMSSend/build/Debug-iphonesimulator/SMSSend.app
+t2
+s0
+
+N/Users/Amrita/Documents/SMSSend/build/Debug-iphonesimulator/SMSSend.app.dSYM
+t2
+s0
+
+N/Users/Amrita/Documents/SMSSend/build/Debug-iphonesimulator/SMSSend.app/Info.plist
+t1277898512
+s591
+
+N/Users/Amrita/Documents/SMSSend/build/Debug-iphonesimulator/SMSSend.app/MainWindow.nib
+t1277898515
+s1123
+
+N/Users/Amrita/Documents/SMSSend/build/Debug-iphonesimulator/SMSSend.app/PkgInfo
+t1277898512
+s8
+
+N/Users/Amrita/Documents/SMSSend/build/Debug-iphonesimulator/SMSSend.app/SMSSend
+t2
+s0
+
+N/Users/Amrita/Documents/SMSSend/build/Debug-iphonesimulator/SMSSend.app/SMSSendViewController.nib
+t1277898515
+s1457
+
+N/Users/Amrita/Documents/SMSSend/build/SMSSend.build/Debug-iphonesimulator/SMSSend.build/Objects-normal/i386/SMSSend.LinkFileList
+c000000004C2B2F100000000000000178
+t1277898512
+s376
+
+N/Users/Amrita/Documents/SMSSend/build/SMSSend.build/Debug-iphonesimulator/SMSSend.build/Objects-normal/i386/SMSSendAppDelegate.o
+t1277898518
+s47716
+
+N/Users/Amrita/Documents/SMSSend/build/SMSSend.build/Debug-iphonesimulator/SMSSend.build/Objects-normal/i386/SMSSendViewController.o
+t2
+s0
+
+N/Users/Amrita/Documents/SMSSend/build/SMSSend.build/Debug-iphonesimulator/SMSSend.build/Objects-normal/i386/main.o
+t1277898518
+s6288
+
+N/Users/Amrita/Documents/SMSSend/main.m
+c000000004C2B2C550000000000000172
+t1277897813
+s370
+i<UIKit/UIKit.h>
+
+N/var/folders/Ix/Ixt-AUniFJ0+ciCCy+GXh++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SMSSend_Prefix-dgvkzjjzemrelcbdrnyncdwirmzm/SMSSend_Prefix.pch.gch
+t1277898517
+s15232016
+
+NSMSSend-Info.plist
+c000000004C2B2C55000000000000038D
+t1277897813
+s909
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies299591312#299591312#0(0"0(0#1#0"8600807520#0"0#
+
+CCompileC build/SMSSend.build/Debug-iphonesimulator/SMSSend.build/Objects-normal/i386/SMSSendAppDelegate.o /Users/Amrita/Documents/SMSSend/Classes/SMSSendAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s299591318.122569
+e299591318.265175
+r1
+xCompileC
+xbuild/SMSSend.build/Debug-iphonesimulator/SMSSend.build/Objects-normal/i386/SMSSendAppDelegate.o
+x/Users/Amrita/Documents/SMSSend/Classes/SMSSendAppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@68"Compile /Users/Amrita/Documents/SMSSend/Classes/SMSSendAppDelegate.m299591318#299591318#0(0"0(0#0#60"/Users/Amrita/Documents/SMSSend/Classes/SMSSendAppDelegate.m8601926496#1860"    cd /Users/Amrita/Documents/SMSSend    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Users/Amrita/Documents/SMSSend/build/SMSSend.build/Debug-iphonesimulator/SMSSend.build/SMSSend-generated-files.hmap -I/Users/Amrita/Documents/SMSSend/build/SMSSend.build/Debug-iphonesimulator/SMSSend.build/SMSSend-own-target-headers.hmap -I/Users/Amrita/Documents/SMSSend/build/SMSSend.build/Debug-iphonesimulator/SMSSend.build/SMSSend-all-target-headers.hmap -iquote /Users/Amrita/Documents/SMSSend/build/SMSSend.build/Debug-iphonesimulator/SMSSend.build/SMSSend-project-headers.hmap -F/Users/Amrita/Documents/SMSSend/build/Debug-iphonesimulator -I/Users/Amrita/Documents/SMSSend/build/Debug-iphonesimulator/include -I/Users/Amrita/Documents/SMSSend/build/SMSSend.build/Debug-iphonesimulator/SMSSend.build/DerivedSources/i386 -I/Users/Amrita/Documents/SMSSend/build/SMSSend.build/Debug-iphonesimulator/SMSSend.build/DerivedSources -include /var/folders/Ix/Ixt-AUniFJ0+ciCCy+GXh++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SMSSend_Prefix-dgvkzjjzemrelcbdrnyncdwirmzm/SMSSend_Prefix.pch -c /Users/Amrita/Documents/SMSSend/Classes/SMSSendAppDelegate.m -o /Users/Amrita/Documents/SMSSend/build/SMSSend.build/Debug-iphonesimulator/SMSSend.build/Objects-normal/i386/SMSSendAppDelegate.o0#
+
+CCompileC build/SMSSend.build/Debug-iphonesimulator/SMSSend.build/Objects-normal/i386/SMSSendViewController.o /Users/Amrita/Documents/SMSSend/Classes/SMSSendViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s299591318.256937
+e299591318.320270
+r0
+xCompileC
+xbuild/SMSSend.build/Debug-iphonesimulator/SMSSend.build/Objects-normal/i386/SMSSendViewController.o
+x/Users/Amrita/Documents/SMSSend/Classes/SMSSendViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+o/Users/Amrita/Documents/SMSSend/Classes/SMSSendViewController.m: In function '-[SMSSendViewController messageComposeViewController:didFinishWithResult:]':
+o/Users/Amrita/Documents/SMSSend/Classes/SMSSendViewController.m:34: error: expected expression before 'UIAlertView'
+o/Users/Amrita/Documents/SMSSend/Classes/SMSSendViewController.m:35: error: stray '\342' in program
+o/Users/Amrita/Documents/SMSSend/Classes/SMSSendViewController.m:35: error: stray '\200' in program
+o/Users/Amrita/Documents/SMSSend/Classes/SMSSendViewController.m:35: error: stray '\235' in program
+o/Users/Amrita/Documents/SMSSend/Classes/SMSSendViewController.m:35: error: stray '\342' in program
+o/Users/Amrita/Documents/SMSSend/Classes/SMSSendViewController.m:35: error: stray '\200' in program
+o/Users/Amrita/Documents/SMSSend/Classes/SMSSendViewController.m:35: error: stray '\235' in program
+o/Users/Amrita/Documents/SMSSend/Classes/SMSSendViewController.m:36: error: 'alert' undeclared (first use in this function)
+o/Users/Amrita/Documents/SMSSend/Classes/SMSSendViewController.m:36: error: (Each undeclared identifier is reported only once
+o/Users/Amrita/Documents/SMSSend/Classes/SMSSendViewController.m:36: error: for each function it appears in.)
+o{standard input}:158:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_8" minus "L00000000001$pb"
+o{standard input}:158:symbol: "L_OBJC_SELECTOR_REFERENCES_8" can't be undefined in a subtraction expression
+o{standard input}:149:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_7" minus "L00000000001$pb"
+o{standard input}:149:symbol: "L_OBJC_SELECTOR_REFERENCES_7" can't be undefined in a subtraction expression
+o{standard input}:140:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_6" minus "L00000000001$pb"
+o{standard input}:140:symbol: "L_OBJC_SELECTOR_REFERENCES_6" can't be undefined in a subtraction expression
+o{standard input}:130:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_5" minus "L00000000001$pb"
+o{standard input}:130:symbol: "L_OBJC_SELECTOR_REFERENCES_5" can't be undefined in a subtraction expression
+o{standard input}:125:non-relocatable subtraction expression, "L_OBJC_CLASSLIST_REFERENCES_$_1" minus "L00000000001$pb"
+o{standard input}:125:symbol: "L_OBJC_CLASSLIST_REFERENCES_$_1" can't be undefined in a subtraction expression
+o{standard input}:118:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_4" minus "L00000000001$pb"
+o{standard input}:118:symbol: "L_OBJC_SELECTOR_REFERENCES_4" can't be undefined in a subtraction expression
+o{standard input}:108:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_3" minus "L00000000001$pb"
+o{standard input}:108:symbol: "L_OBJC_SELECTOR_REFERENCES_3" can't be undefined in a subtraction expression
+o{standard input}:105:non-relocatable subtraction expression, "L_OBJC_CLASSLIST_REFERENCES_$_0" minus "L00000000001$pb"
+o{standard input}:105:symbol: "L_OBJC_CLASSLIST_REFERENCES_$_0" can't be undefined in a subtraction expression
+o{standard input}:98:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_2" minus "L00000000001$pb"
+o{standard input}:98:symbol: "L_OBJC_SELECTOR_REFERENCES_2" can't be undefined in a subtraction expression
+o{standard input}:92:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_1" minus "L00000000001$pb"
+o{standard input}:92:symbol: "L_OBJC_SELECTOR_REFERENCES_1" can't be undefined in a subtraction expression
+o{standard input}:86:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_0" minus "L00000000001$pb"
+o{standard input}:86:symbol: "L_OBJC_SELECTOR_REFERENCES_0" can't be undefined in a subtraction expression
+o{standard input}:83:non-relocatable subtraction expression, "L_OBJC_CLASSLIST_REFERENCES_$_0" minus "L00000000001$pb"
+o{standard input}:83:symbol: "L_OBJC_CLASSLIST_REFERENCES_$_0" can't be undefined in a subtraction expression
+o{standard input}:unknown:Undefined local symbol L_OBJC_CLASSLIST_REFERENCES_$_0
+o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_0
+o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_1
+o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_2
+o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_3
+o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_4
+o{standard input}:unknown:Undefined local symbol L_OBJC_CLASSLIST_REFERENCES_$_1
+o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_5
+o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_6
+o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_7
+o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_8
+lSLF07#2@71"Compile /Users/Amrita/Documents/SMSSend/Classes/SMSSendViewController.m299591318#299591318#0(4761"/Users/Amrita/Documents/SMSSend/Classes/SMSSendViewController.m: In function '-[SMSSendViewController messageComposeViewController:didFinishWithResult:]':/Users/Amrita/Documents/SMSSend/Classes/SMSSendViewController.m:34: error: expected expression before 'UIAlertView'/Users/Amrita/Documents/SMSSend/Classes/SMSSendViewController.m:35: error: stray '\342' in program/Users/Amrita/Documents/SMSSend/Classes/SMSSendViewController.m:35: error: stray '\200' in program/Users/Amrita/Documents/SMSSend/Classes/SMSSendViewController.m:35: error: stray '\235' in program/Users/Amrita/Documents/SMSSend/Classes/SMSSendViewController.m:35: error: stray '\342' in program/Users/Amrita/Documents/SMSSend/Classes/SMSSendViewController.m:35: error: stray '\200' in program/Users/Amrita/Documents/SMSSend/Classes/SMSSendViewController.m:35: error: stray '\235' in program/Users/Amrita/Documents/SMSSend/Classes/SMSSendViewController.m:36: error: 'alert' undeclared (first use in this function)/Users/Amrita/Documents/SMSSend/Classes/SMSSendViewController.m:36: error: (Each undeclared identifier is reported only once/Users/Amrita/Documents/SMSSend/Classes/SMSSendViewController.m:36: error: for each function it appears in.){standard input}:158:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_8" minus "L00000000001$pb"{standard input}:158:symbol: "L_OBJC_SELECTOR_REFERENCES_8" can't be undefined in a subtraction expression{standard input}:149:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_7" minus "L00000000001$pb"{standard input}:149:symbol: "L_OBJC_SELECTOR_REFERENCES_7" can't be undefined in a subtraction expression{standard input}:140:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_6" minus "L00000000001$pb"{standard input}:140:symbol: "L_OBJC_SELECTOR_REFERENCES_6" can't be undefined in a subtraction expression{standard input}:130:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_5" minus "L00000000001$pb"{standard input}:130:symbol: "L_OBJC_SELECTOR_REFERENCES_5" can't be undefined in a subtraction expression{standard input}:125:non-relocatable subtraction expression, "L_OBJC_CLASSLIST_REFERENCES_$_1" minus "L00000000001$pb"{standard input}:125:symbol: "L_OBJC_CLASSLIST_REFERENCES_$_1" can't be undefined in a subtraction expression{standard input}:118:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_4" minus "L00000000001$pb"{standard input}:118:symbol: "L_OBJC_SELECTOR_REFERENCES_4" can't be undefined in a subtraction expression{standard input}:108:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_3" minus "L00000000001$pb"{standard input}:108:symbol: "L_OBJC_SELECTOR_REFERENCES_3" can't be undefined in a subtraction expression{standard input}:105:non-relocatable subtraction expression, "L_OBJC_CLASSLIST_REFERENCES_$_0" minus "L00000000001$pb"{standard input}:105:symbol: "L_OBJC_CLASSLIST_REFERENCES_$_0" can't be undefined in a subtraction expression{standard input}:98:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_2" minus "L00000000001$pb"{standard input}:98:symbol: "L_OBJC_SELECTOR_REFERENCES_2" can't be undefined in a subtraction expression{standard input}:92:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_1" minus "L00000000001$pb"{standard input}:92:symbol: "L_OBJC_SELECTOR_REFERENCES_1" can't be undefined in a subtraction expression{standard input}:86:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_0" minus "L00000000001$pb"{standard input}:86:symbol: "L_OBJC_SELECTOR_REFERENCES_0" can't be undefined in a subtraction expression{standard input}:83:non-relocatable subtraction expression, "L_OBJC_CLASSLIST_REFERENCES_$_0" minus "L00000000001$pb"{standard input}:83:symbol: "L_OBJC_CLASSLIST_REFERENCES_$_0" can't be undefined in a subtraction expression{standard input}:unknown:Undefined local symbol L_OBJC_CLASSLIST_REFERENCES_$_0{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_0{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_1{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_2{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_3{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_4{standard input}:unknown:Undefined local symbol L_OBJC_CLASSLIST_REFERENCES_$_1{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_5{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_6{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_7{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_88(4@40"Expected expression before 'UIAlertView'299591318#155#116#0(6@63"/Users/Amrita/Documents/SMSSend/Classes/SMSSendViewController.m299591311#34#0#34#0#19"expected * before *0(4@23"Stray '\342' in program299591318#271#99#0(6@63"/Users/Amrita/Documents/SMSSend/Classes/SMSSendViewController.m299591311#35#0#35#0#20"stray '*' in program0(4@23"Stray '\200' in program299591318#370#99#0(6@63"/Users/Amrita/Documents/SMSSend/Classes/SMSSendViewController.m299591311#35#0#35#0#20"stray '*' in program0(4@23"Stray '\235' in program299591318#469#99#0(6@63"/Users/Amrita/Documents/SMSSend/Classes/SMSSendViewController.m299591311#35#0#35#0#20"stray '*' in program0(4@23"Stray '\342' in program299591318#568#99#0(6@63"/Users/Amrita/Documents/SMSSend/Classes/SMSSendViewController.m299591311#35#0#35#0#20"stray '*' in program0(4@23"Stray '\200' in program299591318#667#99#0(6@63"/Users/Amrita/Documents/SMSSend/Classes/SMSSendViewController.m299591311#35#0#35#0#20"stray '*' in program0(4@23"Stray '\235' in program299591318#766#99#0(6@63"/Users/Amrita/Documents/SMSSend/Classes/SMSSendViewController.m299591311#35#0#35#0#20"stray '*' in program0(4@47"'alert' undeclared (first use in this function)299591318#865#123#0(6@63"/Users/Amrita/Documents/SMSSend/Classes/SMSSendViewController.m299591311#36#0#36#0#43"'*' undeclared (first use in this function)0(0#0#63"/Users/Amrita/Documents/SMSSend/Classes/SMSSendViewController.m8601135520#1866"    cd /Users/Amrita/Documents/SMSSend    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Users/Amrita/Documents/SMSSend/build/SMSSend.build/Debug-iphonesimulator/SMSSend.build/SMSSend-generated-files.hmap -I/Users/Amrita/Documents/SMSSend/build/SMSSend.build/Debug-iphonesimulator/SMSSend.build/SMSSend-own-target-headers.hmap -I/Users/Amrita/Documents/SMSSend/build/SMSSend.build/Debug-iphonesimulator/SMSSend.build/SMSSend-all-target-headers.hmap -iquote /Users/Amrita/Documents/SMSSend/build/SMSSend.build/Debug-iphonesimulator/SMSSend.build/SMSSend-project-headers.hmap -F/Users/Amrita/Documents/SMSSend/build/Debug-iphonesimulator -I/Users/Amrita/Documents/SMSSend/build/Debug-iphonesimulator/include -I/Users/Amrita/Documents/SMSSend/build/SMSSend.build/Debug-iphonesimulator/SMSSend.build/DerivedSources/i386 -I/Users/Amrita/Documents/SMSSend/build/SMSSend.build/Debug-iphonesimulator/SMSSend.build/DerivedSources -include /var/folders/Ix/Ixt-AUniFJ0+ciCCy+GXh++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SMSSend_Prefix-dgvkzjjzemrelcbdrnyncdwirmzm/SMSSend_Prefix.pch -c /Users/Amrita/Documents/SMSSend/Classes/SMSSendViewController.m -o /Users/Amrita/Documents/SMSSend/build/SMSSend.build/Debug-iphonesimulator/SMSSend.build/Objects-normal/i386/SMSSendViewController.o1#
+
+CCompileC build/SMSSend.build/Debug-iphonesimulator/SMSSend.build/Objects-normal/i386/main.o /Users/Amrita/Documents/SMSSend/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s299591318.121502
+e299591318.256833
+r1
+xCompileC
+xbuild/SMSSend.build/Debug-iphonesimulator/SMSSend.build/Objects-normal/i386/main.o
+x/Users/Amrita/Documents/SMSSend/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@46"Compile /Users/Amrita/Documents/SMSSend/main.m299591318#299591318#0(0"0(0#0#38"/Users/Amrita/Documents/SMSSend/main.m8602223392#1824"    cd /Users/Amrita/Documents/SMSSend    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Users/Amrita/Documents/SMSSend/build/SMSSend.build/Debug-iphonesimulator/SMSSend.build/SMSSend-generated-files.hmap -I/Users/Amrita/Documents/SMSSend/build/SMSSend.build/Debug-iphonesimulator/SMSSend.build/SMSSend-own-target-headers.hmap -I/Users/Amrita/Documents/SMSSend/build/SMSSend.build/Debug-iphonesimulator/SMSSend.build/SMSSend-all-target-headers.hmap -iquote /Users/Amrita/Documents/SMSSend/build/SMSSend.build/Debug-iphonesimulator/SMSSend.build/SMSSend-project-headers.hmap -F/Users/Amrita/Documents/SMSSend/build/Debug-iphonesimulator -I/Users/Amrita/Documents/SMSSend/build/Debug-iphonesimulator/include -I/Users/Amrita/Documents/SMSSend/build/SMSSend.build/Debug-iphonesimulator/SMSSend.build/DerivedSources/i386 -I/Users/Amrita/Documents/SMSSend/build/SMSSend.build/Debug-iphonesimulator/SMSSend.build/DerivedSources -include /var/folders/Ix/Ixt-AUniFJ0+ciCCy+GXh++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SMSSend_Prefix-dgvkzjjzemrelcbdrnyncdwirmzm/SMSSend_Prefix.pch -c /Users/Amrita/Documents/SMSSend/main.m -o /Users/Amrita/Documents/SMSSend/build/SMSSend.build/Debug-iphonesimulator/SMSSend.build/Objects-normal/i386/main.o0#
+
+CCompileXIB /Users/Amrita/Documents/SMSSend/MainWindow.xib
+s299591312.321976
+e299591315.116614
+r1
+xCompileXIB
+x/Users/Amrita/Documents/SMSSend/MainWindow.xib
+lSLF07#2@25"CompileXIB MainWindow.xib299591312#299591315#0(0"0(0#0#46"/Users/Amrita/Documents/SMSSend/MainWindow.xib8600887968#549"    cd /Users/Amrita/Documents/SMSSend    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.0    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/Amrita/Documents/SMSSend/build/Debug-iphonesimulator/SMSSend.app/MainWindow.nib /Users/Amrita/Documents/SMSSend/MainWindow.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk0#
+
+CCompileXIB /Users/Amrita/Documents/SMSSend/SMSSendViewController.xib
+s299591312.322713
+e299591315.139345
+r1
+xCompileXIB
+x/Users/Amrita/Documents/SMSSend/SMSSendViewController.xib
+lSLF07#2@36"CompileXIB SMSSendViewController.xib299591312#299591315#0(0"0(0#0#57"/Users/Amrita/Documents/SMSSend/SMSSendViewController.xib8600786176#571"    cd /Users/Amrita/Documents/SMSSend    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.0    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/Amrita/Documents/SMSSend/build/Debug-iphonesimulator/SMSSend.app/SMSSendViewController.nib /Users/Amrita/Documents/SMSSend/SMSSendViewController.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk0#
+
+CGenerateDSYMFile /Users/Amrita/Documents/SMSSend/build/Debug-iphonesimulator/SMSSend.app.dSYM /Users/Amrita/Documents/SMSSend/build/Debug-iphonesimulator/SMSSend.app/SMSSend
+r0
+
+CLd /Users/Amrita/Documents/SMSSend/build/Debug-iphonesimulator/SMSSend.app/SMSSend normal i386
+r0
+
+CProcessInfoPlistFile /Users/Amrita/Documents/SMSSend/build/Debug-iphonesimulator/SMSSend.app/Info.plist SMSSend-Info.plist
+s299591312.287192
+e299591312.321885
+r1
+xProcessInfoPlistFile
+x/Users/Amrita/Documents/SMSSend/build/Debug-iphonesimulator/SMSSend.app/Info.plist
+xSMSSend-Info.plist
+lSLF07#2@26"Process SMSSend-Info.plist299591312#299591312#0(0"0(0#0#50"/Users/Amrita/Documents/SMSSend/SMSSend-Info.plist8602056160#458"    cd /Users/Amrita/Documents/SMSSend    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility SMSSend-Info.plist -genpkginfo /Users/Amrita/Documents/SMSSend/build/Debug-iphonesimulator/SMSSend.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/Amrita/Documents/SMSSend/build/Debug-iphonesimulator/SMSSend.app/Info.plist0#
+
+CProcessPCH /var/folders/Ix/Ixt-AUniFJ0+ciCCy+GXh++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SMSSend_Prefix-dgvkzjjzemrelcbdrnyncdwirmzm/SMSSend_Prefix.pch.gch SMSSend_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s299591315.139477
+e299591318.121305
+r1
+xProcessPCH
+x/var/folders/Ix/Ixt-AUniFJ0+ciCCy+GXh++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SMSSend_Prefix-dgvkzjjzemrelcbdrnyncdwirmzm/SMSSend_Prefix.pch.gch
+xSMSSend_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@29"Precompile SMSSend_Prefix.pch299591315#299591318#0(0"0(0#0#50"/Users/Amrita/Documents/SMSSend/SMSSend_Prefix.pch8611366496#1723"    cd /Users/Amrita/Documents/SMSSend    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Users/Amrita/Documents/SMSSend/build/SMSSend.build/Debug-iphonesimulator/SMSSend.build/SMSSend-generated-files.hmap -I/Users/Amrita/Documents/SMSSend/build/SMSSend.build/Debug-iphonesimulator/SMSSend.build/SMSSend-own-target-headers.hmap -I/Users/Amrita/Documents/SMSSend/build/SMSSend.build/Debug-iphonesimulator/SMSSend.build/SMSSend-all-target-headers.hmap -iquote /Users/Amrita/Documents/SMSSend/build/SMSSend.build/Debug-iphonesimulator/SMSSend.build/SMSSend-project-headers.hmap -F/Users/Amrita/Documents/SMSSend/build/Debug-iphonesimulator -I/Users/Amrita/Documents/SMSSend/build/Debug-iphonesimulator/include -I/Users/Amrita/Documents/SMSSend/build/SMSSend.build/Debug-iphonesimulator/SMSSend.build/DerivedSources/i386 -I/Users/Amrita/Documents/SMSSend/build/SMSSend.build/Debug-iphonesimulator/SMSSend.build/DerivedSources -c /Users/Amrita/Documents/SMSSend/SMSSend_Prefix.pch -o /var/folders/Ix/Ixt-AUniFJ0+ciCCy+GXh++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SMSSend_Prefix-dgvkzjjzemrelcbdrnyncdwirmzm/SMSSend_Prefix.pch.gch0#
+
+CTouch /Users/Amrita/Documents/SMSSend/build/Debug-iphonesimulator/SMSSend.app
+r0
+

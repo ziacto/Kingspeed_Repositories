@@ -1,0 +1,11 @@
+DPoint
+
+参考
+iCarousel
+	Wheel, Vertical
+	ARC対応
+	>=4.3
+ALRadial
+	ARC必要
+	>=5.0
+

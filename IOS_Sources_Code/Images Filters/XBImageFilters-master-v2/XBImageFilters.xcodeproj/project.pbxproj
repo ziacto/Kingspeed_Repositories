@@ -1,0 +1,781 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1B231F941644693C00CBE9C9 /* XBGLEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B231F871644693C00CBE9C9 /* XBGLEngine.m */; };
+		1B231F951644693C00CBE9C9 /* XBGLProgram.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B231F891644693C00CBE9C9 /* XBGLProgram.m */; };
+		1B231F961644693C00CBE9C9 /* XBGLShaderAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B231F8B1644693C00CBE9C9 /* XBGLShaderAttribute.m */; };
+		1B231F971644693C00CBE9C9 /* XBGLShaderUniform.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B231F8D1644693C00CBE9C9 /* XBGLShaderUniform.m */; };
+		1B231F981644693C00CBE9C9 /* XBGLShaderVariable.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B231F8F1644693C00CBE9C9 /* XBGLShaderVariable.m */; };
+		1B231F991644693C00CBE9C9 /* XBGLTexture.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B231F911644693C00CBE9C9 /* XBGLTexture.m */; };
+		1B36A52D15A3C4AC00D297B1 /* OverlayFragmentShader.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 1B36A52C15A3C4AC00D297B1 /* OverlayFragmentShader.glsl */; };
+		1B36ACA61648346C00D5C9F6 /* XBGLRenderbuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B36ACA51648346C00D5C9F6 /* XBGLRenderbuffer.m */; };
+		1B36ACAA16483DAC00D5C9F6 /* XBGLFramebuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B36ACA916483DAC00D5C9F6 /* XBGLFramebuffer.m */; };
+		1B4D529B1501A188007D743A /* XBFilteredCameraView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B4D529A1501A188007D743A /* XBFilteredCameraView.m */; };
+		1B4D52A51501A6AA007D743A /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B4D52A41501A6AA007D743A /* CameraViewController.m */; };
+		1B675E7214EE5DF300ED8402 /* LuminanceFragmentShader.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 1B675E6F14EE5DBC00ED8402 /* LuminanceFragmentShader.glsl */; };
+		1BD8E55A1501BB4300875FD3 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BD8E5591501BB4200875FD3 /* AVFoundation.framework */; };
+		1BD8E55D1501D97000875FD3 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BD8E55C1501D97000875FD3 /* CoreVideo.framework */; };
+		1BD8E55F1501D98200875FD3 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BD8E55E1501D98200875FD3 /* CoreMedia.framework */; };
+		1BE16EC414EB4BE600570A64 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BE16EC314EB4BE600570A64 /* UIKit.framework */; };
+		1BE16EC614EB4BE600570A64 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BE16EC514EB4BE600570A64 /* Foundation.framework */; };
+		1BE16EC814EB4BE600570A64 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BE16EC714EB4BE600570A64 /* CoreGraphics.framework */; };
+		1BE16ECE14EB4BE600570A64 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1BE16ECC14EB4BE600570A64 /* InfoPlist.strings */; };
+		1BE16ED014EB4BE600570A64 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE16ECF14EB4BE600570A64 /* main.m */; };
+		1BE16ED414EB4BE600570A64 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE16ED314EB4BE600570A64 /* AppDelegate.m */; };
+		1BE16ED714EB4BE600570A64 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BE16ED514EB4BE600570A64 /* MainStoryboard.storyboard */; };
+		1BE16EE814EB4D0900570A64 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE16EE714EB4D0900570A64 /* ImageViewController.m */; };
+		1BE16EEB14EB4DD000570A64 /* XBFilteredImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE16EEA14EB4DD000570A64 /* XBFilteredImageView.m */; };
+		1BE16EEE14EB4E5B00570A64 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BE16EEC14EB4E5B00570A64 /* GLKit.framework */; };
+		1BE16EF114EB50B100570A64 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BE16EF014EB50B100570A64 /* QuartzCore.framework */; };
+		1BE16EF614EB56EB00570A64 /* LucasCorrea.png in Resources */ = {isa = PBXBuildFile; fileRef = 1BE16EF414EB56EB00570A64 /* LucasCorrea.png */; };
+		1BE16EF714EB56EB00570A64 /* LucasCorrea@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1BE16EF514EB56EB00570A64 /* LucasCorrea@2x.png */; };
+		1BE20C621535BBCC00E9D595 /* DiscretizeShader.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 1BE20C611535BBCC00E9D595 /* DiscretizeShader.glsl */; };
+		1BE20C641535C33900E9D595 /* PixelateShader.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 1BE20C631535C33900E9D595 /* PixelateShader.glsl */; };
+		1BE20C661535C54F00E9D595 /* SuckShader.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 1BE20C651535C54F00E9D595 /* SuckShader.glsl */; };
+		1BE37E331500FA5C0074D29C /* XBFilteredView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE37E321500FA5C0074D29C /* XBFilteredView.m */; };
+		1BE4179214F92E5E00EB0ADD /* BlurFragmentShader.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 1BE4179114F92E5E00EB0ADD /* BlurFragmentShader.glsl */; };
+		1BE8667115AB23B60058E8C7 /* OverlayVertexShader.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 1BE8667015AB23B60058E8C7 /* OverlayVertexShader.glsl */; };
+		1BE99D111538A071001C532F /* CameraTargetView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE99D101538A071001C532F /* CameraTargetView.m */; };
+		1BEA547A15AB6D7800A5F430 /* VBlurVertexShader.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 1BEA547915AB6D7800A5F430 /* VBlurVertexShader.glsl */; };
+		1BEA547C15AB6E0000A5F430 /* HBlurVertexShader.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 1BEA547B15AB6E0000A5F430 /* HBlurVertexShader.glsl */; };
+		1BEA549315ABC64800A5F430 /* UnsharpMaskFragmentShader.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 1BEA549215ABC64800A5F430 /* UnsharpMaskFragmentShader.glsl */; };
+		1BFA8BF916CFFB2F00BF4CAD /* DefaultFragmentShader.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 1BFA8BF716CFFB2F00BF4CAD /* DefaultFragmentShader.glsl */; };
+		1BFA8BFA16CFFB2F00BF4CAD /* DefaultVertexShader.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 1BFA8BF816CFFB2F00BF4CAD /* DefaultVertexShader.glsl */; };
+		3295F2131522EEC500C27406 /* ProcessingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3295F2111522EEC500C27406 /* ProcessingViewController.m */; };
+		3295F22F1522FD3100C27406 /* basn0g01.png in Resources */ = {isa = PBXBuildFile; fileRef = 3295F2201522FD3100C27406 /* basn0g01.png */; };
+		3295F2301522FD3100C27406 /* basn0g02.png in Resources */ = {isa = PBXBuildFile; fileRef = 3295F2211522FD3100C27406 /* basn0g02.png */; };
+		3295F2311522FD3100C27406 /* basn0g04.png in Resources */ = {isa = PBXBuildFile; fileRef = 3295F2221522FD3100C27406 /* basn0g04.png */; };
+		3295F2321522FD3100C27406 /* basn0g08.png in Resources */ = {isa = PBXBuildFile; fileRef = 3295F2231522FD3100C27406 /* basn0g08.png */; };
+		3295F2331522FD3100C27406 /* basn0g16.png in Resources */ = {isa = PBXBuildFile; fileRef = 3295F2241522FD3100C27406 /* basn0g16.png */; };
+		3295F2341522FD3100C27406 /* basn2c08.png in Resources */ = {isa = PBXBuildFile; fileRef = 3295F2251522FD3100C27406 /* basn2c08.png */; };
+		3295F2351522FD3100C27406 /* basn2c16.png in Resources */ = {isa = PBXBuildFile; fileRef = 3295F2261522FD3100C27406 /* basn2c16.png */; };
+		3295F2361522FD3100C27406 /* basn3p01.png in Resources */ = {isa = PBXBuildFile; fileRef = 3295F2271522FD3100C27406 /* basn3p01.png */; };
+		3295F2371522FD3100C27406 /* basn3p02.png in Resources */ = {isa = PBXBuildFile; fileRef = 3295F2281522FD3100C27406 /* basn3p02.png */; };
+		3295F2381522FD3100C27406 /* basn3p04.png in Resources */ = {isa = PBXBuildFile; fileRef = 3295F2291522FD3100C27406 /* basn3p04.png */; };
+		3295F2391522FD3100C27406 /* basn3p08.png in Resources */ = {isa = PBXBuildFile; fileRef = 3295F22A1522FD3100C27406 /* basn3p08.png */; };
+		3295F23A1522FD3100C27406 /* basn4a08.png in Resources */ = {isa = PBXBuildFile; fileRef = 3295F22B1522FD3100C27406 /* basn4a08.png */; };
+		3295F23B1522FD3100C27406 /* basn4a16.png in Resources */ = {isa = PBXBuildFile; fileRef = 3295F22C1522FD3100C27406 /* basn4a16.png */; };
+		3295F23C1522FD3100C27406 /* basn6a08.png in Resources */ = {isa = PBXBuildFile; fileRef = 3295F22D1522FD3100C27406 /* basn6a08.png */; };
+		3295F23D1522FD3100C27406 /* basn6a16.png in Resources */ = {isa = PBXBuildFile; fileRef = 3295F22E1522FD3100C27406 /* basn6a16.png */; };
+		3295F2421522FFDB00C27406 /* marvin.png in Resources */ = {isa = PBXBuildFile; fileRef = 3295F2411522FFDB00C27406 /* marvin.png */; };
+		3295F27E1523116700C27406 /* russian-ball.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3295F27D1523116700C27406 /* russian-ball.jpeg */; };
+		E2CC33DE1680736C003E60BE /* UIImage+XBImageFilters.m in Sources */ = {isa = PBXBuildFile; fileRef = E2CC33DD1680736C003E60BE /* UIImage+XBImageFilters.m */; };
+		E2CC33E916807412003E60BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BE16EC514EB4BE600570A64 /* Foundation.framework */; };
+		E2CC340A1680744F003E60BE /* BlurFragmentShader.glsl in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1BE4179114F92E5E00EB0ADD /* BlurFragmentShader.glsl */; };
+		E2CC340B1680744F003E60BE /* UnsharpMaskFragmentShader.glsl in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1BEA549215ABC64800A5F430 /* UnsharpMaskFragmentShader.glsl */; };
+		E2CC340C1680744F003E60BE /* HBlurVertexShader.glsl in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1BEA547B15AB6E0000A5F430 /* HBlurVertexShader.glsl */; };
+		E2CC340D1680744F003E60BE /* VBlurVertexShader.glsl in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1BEA547915AB6D7800A5F430 /* VBlurVertexShader.glsl */; };
+		E2CC340E1680744F003E60BE /* LuminanceFragmentShader.glsl in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1B675E6F14EE5DBC00ED8402 /* LuminanceFragmentShader.glsl */; };
+		E2CC34101680744F003E60BE /* OverlayFragmentShader.glsl in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1B36A52C15A3C4AC00D297B1 /* OverlayFragmentShader.glsl */; };
+		E2CC34111680744F003E60BE /* OverlayVertexShader.glsl in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1BE8667015AB23B60058E8C7 /* OverlayVertexShader.glsl */; };
+		E2CC34131680744F003E60BE /* SuckShader.glsl in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1BE20C651535C54F00E9D595 /* SuckShader.glsl */; };
+		E2CC34141680744F003E60BE /* PixelateShader.glsl in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1BE20C631535C33900E9D595 /* PixelateShader.glsl */; };
+		E2CC34151680744F003E60BE /* DiscretizeShader.glsl in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1BE20C611535BBCC00E9D595 /* DiscretizeShader.glsl */; };
+		E2CC34171680745D003E60BE /* UIImage+XBImageFilters.h in Headers */ = {isa = PBXBuildFile; fileRef = E2CC33DC1680736C003E60BE /* UIImage+XBImageFilters.h */; };
+		E2CC34191680745D003E60BE /* (null) in Headers */ = {isa = PBXBuildFile; };
+		E2CC341B1680745D003E60BE /* (null) in Headers */ = {isa = PBXBuildFile; };
+		E2CC341D1680745D003E60BE /* (null) in Headers */ = {isa = PBXBuildFile; };
+		E2CC341F1680745D003E60BE /* (null) in Headers */ = {isa = PBXBuildFile; };
+		E2CC34211680745D003E60BE /* (null) in Headers */ = {isa = PBXBuildFile; };
+		E2CC34231680745D003E60BE /* (null) in Headers */ = {isa = PBXBuildFile; };
+		E2CC34251680745D003E60BE /* XBFilteredView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BE37E311500FA5C0074D29C /* XBFilteredView.h */; };
+		E2CC34271680745D003E60BE /* XBFilteredImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BE16EE914EB4DD000570A64 /* XBFilteredImageView.h */; };
+		E2CC34291680745D003E60BE /* XBFilteredCameraView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B4D52991501A188007D743A /* XBFilteredCameraView.h */; };
+		E2CC342B1680745D003E60BE /* CameraTargetView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BE99D0F1538A071001C532F /* CameraTargetView.h */; };
+		E2CC342D16807494003E60BE /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BD8E5591501BB4200875FD3 /* AVFoundation.framework */; };
+		E2CC342E16807494003E60BE /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BD8E55E1501D98200875FD3 /* CoreMedia.framework */; };
+		E2CC342F16807494003E60BE /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BD8E55C1501D97000875FD3 /* CoreVideo.framework */; };
+		E2CC343016807494003E60BE /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BE16EED14EB4E5B00570A64 /* OpenGLES.framework */; };
+		E2CC3431168074A0003E60BE /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BE16EF014EB50B100570A64 /* QuartzCore.framework */; };
+		E2CC3432168074EE003E60BE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BE16EC314EB4BE600570A64 /* UIKit.framework */; };
+		E2CC34331680750F003E60BE /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BE16EEC14EB4E5B00570A64 /* GLKit.framework */; };
+		E2CC343416807558003E60BE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BE16EC714EB4BE600570A64 /* CoreGraphics.framework */; };
+		E2CC343916807757003E60BE /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BE16EED14EB4E5B00570A64 /* OpenGLES.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E2CC33E616807412003E60BE /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				E2CC340A1680744F003E60BE /* BlurFragmentShader.glsl in CopyFiles */,
+				E2CC340B1680744F003E60BE /* UnsharpMaskFragmentShader.glsl in CopyFiles */,
+				E2CC340C1680744F003E60BE /* HBlurVertexShader.glsl in CopyFiles */,
+				E2CC340D1680744F003E60BE /* VBlurVertexShader.glsl in CopyFiles */,
+				E2CC340E1680744F003E60BE /* LuminanceFragmentShader.glsl in CopyFiles */,
+				E2CC34101680744F003E60BE /* OverlayFragmentShader.glsl in CopyFiles */,
+				E2CC34111680744F003E60BE /* OverlayVertexShader.glsl in CopyFiles */,
+				E2CC34131680744F003E60BE /* SuckShader.glsl in CopyFiles */,
+				E2CC34141680744F003E60BE /* PixelateShader.glsl in CopyFiles */,
+				E2CC34151680744F003E60BE /* DiscretizeShader.glsl in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1B231F861644693C00CBE9C9 /* XBGLEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XBGLEngine.h; sourceTree = "<group>"; };
+		1B231F871644693C00CBE9C9 /* XBGLEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XBGLEngine.m; sourceTree = "<group>"; };
+		1B231F881644693C00CBE9C9 /* XBGLProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XBGLProgram.h; sourceTree = "<group>"; };
+		1B231F891644693C00CBE9C9 /* XBGLProgram.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XBGLProgram.m; sourceTree = "<group>"; };
+		1B231F8A1644693C00CBE9C9 /* XBGLShaderAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XBGLShaderAttribute.h; sourceTree = "<group>"; };
+		1B231F8B1644693C00CBE9C9 /* XBGLShaderAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XBGLShaderAttribute.m; sourceTree = "<group>"; };
+		1B231F8C1644693C00CBE9C9 /* XBGLShaderUniform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XBGLShaderUniform.h; sourceTree = "<group>"; };
+		1B231F8D1644693C00CBE9C9 /* XBGLShaderUniform.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XBGLShaderUniform.m; sourceTree = "<group>"; };
+		1B231F8E1644693C00CBE9C9 /* XBGLShaderVariable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XBGLShaderVariable.h; sourceTree = "<group>"; };
+		1B231F8F1644693C00CBE9C9 /* XBGLShaderVariable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XBGLShaderVariable.m; sourceTree = "<group>"; };
+		1B231F901644693C00CBE9C9 /* XBGLTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XBGLTexture.h; sourceTree = "<group>"; };
+		1B231F911644693C00CBE9C9 /* XBGLTexture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XBGLTexture.m; sourceTree = "<group>"; };
+		1B36A52C15A3C4AC00D297B1 /* OverlayFragmentShader.glsl */ = {isa = PBXFileReference; explicitFileType = sourcecode.glsl; fileEncoding = 4; name = OverlayFragmentShader.glsl; path = Shaders/OverlayFragmentShader.glsl; sourceTree = "<group>"; };
+		1B36ACA41648346C00D5C9F6 /* XBGLRenderbuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XBGLRenderbuffer.h; sourceTree = "<group>"; };
+		1B36ACA51648346C00D5C9F6 /* XBGLRenderbuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XBGLRenderbuffer.m; sourceTree = "<group>"; };
+		1B36ACA816483DAC00D5C9F6 /* XBGLFramebuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XBGLFramebuffer.h; sourceTree = "<group>"; };
+		1B36ACA916483DAC00D5C9F6 /* XBGLFramebuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XBGLFramebuffer.m; sourceTree = "<group>"; };
+		1B36ACAB1648533F00D5C9F6 /* XBGL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XBGL.h; sourceTree = "<group>"; };
+		1B4D52991501A188007D743A /* XBFilteredCameraView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XBFilteredCameraView.h; path = Classes/XBImageFilters/XBFilteredCameraView.h; sourceTree = "<group>"; };
+		1B4D529A1501A188007D743A /* XBFilteredCameraView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XBFilteredCameraView.m; path = Classes/XBImageFilters/XBFilteredCameraView.m; sourceTree = "<group>"; };
+		1B4D52A31501A6AA007D743A /* CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CameraViewController.h; path = Classes/Sample/CameraViewController.h; sourceTree = "<group>"; };
+		1B4D52A41501A6AA007D743A /* CameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CameraViewController.m; path = Classes/Sample/CameraViewController.m; sourceTree = "<group>"; };
+		1B675E6F14EE5DBC00ED8402 /* LuminanceFragmentShader.glsl */ = {isa = PBXFileReference; explicitFileType = sourcecode.glsl; fileEncoding = 4; name = LuminanceFragmentShader.glsl; path = Shaders/LuminanceFragmentShader.glsl; sourceTree = "<group>"; };
+		1BD8E5591501BB4200875FD3 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		1BD8E55C1501D97000875FD3 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		1BD8E55E1501D98200875FD3 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		1BE16EBF14EB4BE600570A64 /* XBImageFiltersSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XBImageFiltersSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BE16EC314EB4BE600570A64 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1BE16EC514EB4BE600570A64 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1BE16EC714EB4BE600570A64 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1BE16ECB14EB4BE600570A64 /* XBImageFilters-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "XBImageFilters-Info.plist"; sourceTree = "<group>"; };
+		1BE16ECD14EB4BE600570A64 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1BE16ECF14EB4BE600570A64 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1BE16ED114EB4BE600570A64 /* XBImageFilters-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XBImageFilters-Prefix.pch"; sourceTree = "<group>"; };
+		1BE16ED214EB4BE600570A64 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1BE16ED314EB4BE600570A64 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1BE16ED614EB4BE600570A64 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		1BE16EE614EB4D0900570A64 /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImageViewController.h; path = Classes/Sample/ImageViewController.h; sourceTree = "<group>"; };
+		1BE16EE714EB4D0900570A64 /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImageViewController.m; path = Classes/Sample/ImageViewController.m; sourceTree = "<group>"; };
+		1BE16EE914EB4DD000570A64 /* XBFilteredImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XBFilteredImageView.h; path = Classes/XBImageFilters/XBFilteredImageView.h; sourceTree = "<group>"; };
+		1BE16EEA14EB4DD000570A64 /* XBFilteredImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XBFilteredImageView.m; path = Classes/XBImageFilters/XBFilteredImageView.m; sourceTree = "<group>"; };
+		1BE16EEC14EB4E5B00570A64 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		1BE16EED14EB4E5B00570A64 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		1BE16EF014EB50B100570A64 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		1BE16EF414EB56EB00570A64 /* LucasCorrea.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LucasCorrea.png; sourceTree = "<group>"; };
+		1BE16EF514EB56EB00570A64 /* LucasCorrea@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LucasCorrea@2x.png"; sourceTree = "<group>"; };
+		1BE20C611535BBCC00E9D595 /* DiscretizeShader.glsl */ = {isa = PBXFileReference; explicitFileType = sourcecode.glsl; fileEncoding = 4; name = DiscretizeShader.glsl; path = Shaders/DiscretizeShader.glsl; sourceTree = "<group>"; };
+		1BE20C631535C33900E9D595 /* PixelateShader.glsl */ = {isa = PBXFileReference; explicitFileType = sourcecode.glsl; fileEncoding = 4; name = PixelateShader.glsl; path = Shaders/PixelateShader.glsl; sourceTree = "<group>"; };
+		1BE20C651535C54F00E9D595 /* SuckShader.glsl */ = {isa = PBXFileReference; explicitFileType = sourcecode.glsl; fileEncoding = 4; name = SuckShader.glsl; path = Shaders/SuckShader.glsl; sourceTree = "<group>"; };
+		1BE37E311500FA5C0074D29C /* XBFilteredView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XBFilteredView.h; path = Classes/XBImageFilters/XBFilteredView.h; sourceTree = "<group>"; };
+		1BE37E321500FA5C0074D29C /* XBFilteredView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XBFilteredView.m; path = Classes/XBImageFilters/XBFilteredView.m; sourceTree = "<group>"; };
+		1BE4179114F92E5E00EB0ADD /* BlurFragmentShader.glsl */ = {isa = PBXFileReference; explicitFileType = sourcecode.glsl; fileEncoding = 4; name = BlurFragmentShader.glsl; path = Shaders/BlurFragmentShader.glsl; sourceTree = "<group>"; };
+		1BE8667015AB23B60058E8C7 /* OverlayVertexShader.glsl */ = {isa = PBXFileReference; explicitFileType = sourcecode.glsl; fileEncoding = 4; name = OverlayVertexShader.glsl; path = Shaders/OverlayVertexShader.glsl; sourceTree = "<group>"; };
+		1BE99D0F1538A071001C532F /* CameraTargetView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CameraTargetView.h; path = Classes/XBImageFilters/CameraTargetView.h; sourceTree = "<group>"; };
+		1BE99D101538A071001C532F /* CameraTargetView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CameraTargetView.m; path = Classes/XBImageFilters/CameraTargetView.m; sourceTree = "<group>"; };
+		1BEA547915AB6D7800A5F430 /* VBlurVertexShader.glsl */ = {isa = PBXFileReference; explicitFileType = sourcecode.glsl; fileEncoding = 4; name = VBlurVertexShader.glsl; path = Shaders/VBlurVertexShader.glsl; sourceTree = "<group>"; };
+		1BEA547B15AB6E0000A5F430 /* HBlurVertexShader.glsl */ = {isa = PBXFileReference; explicitFileType = sourcecode.glsl; fileEncoding = 4; name = HBlurVertexShader.glsl; path = Shaders/HBlurVertexShader.glsl; sourceTree = "<group>"; };
+		1BEA549215ABC64800A5F430 /* UnsharpMaskFragmentShader.glsl */ = {isa = PBXFileReference; explicitFileType = sourcecode.glsl; fileEncoding = 4; name = UnsharpMaskFragmentShader.glsl; path = Shaders/UnsharpMaskFragmentShader.glsl; sourceTree = "<group>"; };
+		1BFA8BF716CFFB2F00BF4CAD /* DefaultFragmentShader.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DefaultFragmentShader.glsl; sourceTree = "<group>"; };
+		1BFA8BF816CFFB2F00BF4CAD /* DefaultVertexShader.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DefaultVertexShader.glsl; sourceTree = "<group>"; };
+		3295F2101522EEC500C27406 /* ProcessingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProcessingViewController.h; path = Classes/Sample/ProcessingViewController.h; sourceTree = "<group>"; };
+		3295F2111522EEC500C27406 /* ProcessingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProcessingViewController.m; path = Classes/Sample/ProcessingViewController.m; sourceTree = "<group>"; };
+		3295F2201522FD3100C27406 /* basn0g01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = basn0g01.png; sourceTree = "<group>"; };
+		3295F2211522FD3100C27406 /* basn0g02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = basn0g02.png; sourceTree = "<group>"; };
+		3295F2221522FD3100C27406 /* basn0g04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = basn0g04.png; sourceTree = "<group>"; };
+		3295F2231522FD3100C27406 /* basn0g08.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = basn0g08.png; sourceTree = "<group>"; };
+		3295F2241522FD3100C27406 /* basn0g16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = basn0g16.png; sourceTree = "<group>"; };
+		3295F2251522FD3100C27406 /* basn2c08.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = basn2c08.png; sourceTree = "<group>"; };
+		3295F2261522FD3100C27406 /* basn2c16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = basn2c16.png; sourceTree = "<group>"; };
+		3295F2271522FD3100C27406 /* basn3p01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = basn3p01.png; sourceTree = "<group>"; };
+		3295F2281522FD3100C27406 /* basn3p02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = basn3p02.png; sourceTree = "<group>"; };
+		3295F2291522FD3100C27406 /* basn3p04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = basn3p04.png; sourceTree = "<group>"; };
+		3295F22A1522FD3100C27406 /* basn3p08.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = basn3p08.png; sourceTree = "<group>"; };
+		3295F22B1522FD3100C27406 /* basn4a08.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = basn4a08.png; sourceTree = "<group>"; };
+		3295F22C1522FD3100C27406 /* basn4a16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = basn4a16.png; sourceTree = "<group>"; };
+		3295F22D1522FD3100C27406 /* basn6a08.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = basn6a08.png; sourceTree = "<group>"; };
+		3295F22E1522FD3100C27406 /* basn6a16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = basn6a16.png; sourceTree = "<group>"; };
+		3295F2411522FFDB00C27406 /* marvin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = marvin.png; sourceTree = "<group>"; };
+		3295F27D1523116700C27406 /* russian-ball.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "russian-ball.jpeg"; sourceTree = "<group>"; };
+		E2CC33DC1680736C003E60BE /* UIImage+XBImageFilters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+XBImageFilters.h"; path = "Classes/XBImageFilters/UIImage+XBImageFilters.h"; sourceTree = "<group>"; };
+		E2CC33DD1680736C003E60BE /* UIImage+XBImageFilters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+XBImageFilters.m"; path = "Classes/XBImageFilters/UIImage+XBImageFilters.m"; sourceTree = "<group>"; };
+		E2CC33E816807412003E60BE /* libXBImageFilters.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libXBImageFilters.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2CC33EC16807412003E60BE /* XBImageFilters-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XBImageFilters-Prefix.pch"; sourceTree = "<group>"; };
+		E2CC33ED16807412003E60BE /* XBImageFilters.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XBImageFilters.h; sourceTree = "<group>"; };
+		E2CC33EF16807412003E60BE /* XBImageFilters.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XBImageFilters.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1BE16EBC14EB4BE600570A64 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2CC343916807757003E60BE /* OpenGLES.framework in Frameworks */,
+				1BD8E55F1501D98200875FD3 /* CoreMedia.framework in Frameworks */,
+				1BD8E55D1501D97000875FD3 /* CoreVideo.framework in Frameworks */,
+				1BD8E55A1501BB4300875FD3 /* AVFoundation.framework in Frameworks */,
+				1BE16EF114EB50B100570A64 /* QuartzCore.framework in Frameworks */,
+				1BE16EEE14EB4E5B00570A64 /* GLKit.framework in Frameworks */,
+				1BE16EC414EB4BE600570A64 /* UIKit.framework in Frameworks */,
+				1BE16EC614EB4BE600570A64 /* Foundation.framework in Frameworks */,
+				1BE16EC814EB4BE600570A64 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2CC33E516807412003E60BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2CC343416807558003E60BE /* CoreGraphics.framework in Frameworks */,
+				E2CC34331680750F003E60BE /* GLKit.framework in Frameworks */,
+				E2CC3432168074EE003E60BE /* UIKit.framework in Frameworks */,
+				E2CC3431168074A0003E60BE /* QuartzCore.framework in Frameworks */,
+				E2CC342D16807494003E60BE /* AVFoundation.framework in Frameworks */,
+				E2CC342E16807494003E60BE /* CoreMedia.framework in Frameworks */,
+				E2CC342F16807494003E60BE /* CoreVideo.framework in Frameworks */,
+				E2CC343016807494003E60BE /* OpenGLES.framework in Frameworks */,
+				E2CC33E916807412003E60BE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1B231F851644693C00CBE9C9 /* GL */ = {
+			isa = PBXGroup;
+			children = (
+				1B36ACAB1648533F00D5C9F6 /* XBGL.h */,
+				1B231F861644693C00CBE9C9 /* XBGLEngine.h */,
+				1B231F871644693C00CBE9C9 /* XBGLEngine.m */,
+				1B231F881644693C00CBE9C9 /* XBGLProgram.h */,
+				1B231F891644693C00CBE9C9 /* XBGLProgram.m */,
+				1B231F8A1644693C00CBE9C9 /* XBGLShaderAttribute.h */,
+				1B231F8B1644693C00CBE9C9 /* XBGLShaderAttribute.m */,
+				1B231F8C1644693C00CBE9C9 /* XBGLShaderUniform.h */,
+				1B231F8D1644693C00CBE9C9 /* XBGLShaderUniform.m */,
+				1B231F8E1644693C00CBE9C9 /* XBGLShaderVariable.h */,
+				1B231F8F1644693C00CBE9C9 /* XBGLShaderVariable.m */,
+				1B231F901644693C00CBE9C9 /* XBGLTexture.h */,
+				1B231F911644693C00CBE9C9 /* XBGLTexture.m */,
+				1B36ACA41648346C00D5C9F6 /* XBGLRenderbuffer.h */,
+				1B36ACA51648346C00D5C9F6 /* XBGLRenderbuffer.m */,
+				1B36ACA816483DAC00D5C9F6 /* XBGLFramebuffer.h */,
+				1B36ACA916483DAC00D5C9F6 /* XBGLFramebuffer.m */,
+			);
+			name = GL;
+			path = Classes/XBImageFilters/GL;
+			sourceTree = "<group>";
+		};
+		1B675E6B14EE5D4B00ED8402 /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				1BE4179114F92E5E00EB0ADD /* BlurFragmentShader.glsl */,
+				1BEA549215ABC64800A5F430 /* UnsharpMaskFragmentShader.glsl */,
+				1BEA547B15AB6E0000A5F430 /* HBlurVertexShader.glsl */,
+				1BEA547915AB6D7800A5F430 /* VBlurVertexShader.glsl */,
+				1B675E6F14EE5DBC00ED8402 /* LuminanceFragmentShader.glsl */,
+				1B36A52C15A3C4AC00D297B1 /* OverlayFragmentShader.glsl */,
+				1BE8667015AB23B60058E8C7 /* OverlayVertexShader.glsl */,
+				1BE20C651535C54F00E9D595 /* SuckShader.glsl */,
+				1BE20C631535C33900E9D595 /* PixelateShader.glsl */,
+				1BE20C611535BBCC00E9D595 /* DiscretizeShader.glsl */,
+			);
+			name = Shaders;
+			sourceTree = "<group>";
+		};
+		1BE16EB414EB4BE500570A64 = {
+			isa = PBXGroup;
+			children = (
+				1BE16EC914EB4BE600570A64 /* Classes */,
+				1BE16EF214EB56EB00570A64 /* Resources */,
+				E2CC33EA16807412003E60BE /* XBImageFilters */,
+				1BE16EC214EB4BE600570A64 /* Frameworks */,
+				1BE16EC014EB4BE600570A64 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1BE16EC014EB4BE600570A64 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1BE16EBF14EB4BE600570A64 /* XBImageFiltersSample.app */,
+				E2CC33E816807412003E60BE /* libXBImageFilters.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1BE16EC214EB4BE600570A64 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1BD8E55E1501D98200875FD3 /* CoreMedia.framework */,
+				1BD8E55C1501D97000875FD3 /* CoreVideo.framework */,
+				1BD8E5591501BB4200875FD3 /* AVFoundation.framework */,
+				1BE16EF014EB50B100570A64 /* QuartzCore.framework */,
+				1BE16EEC14EB4E5B00570A64 /* GLKit.framework */,
+				1BE16EED14EB4E5B00570A64 /* OpenGLES.framework */,
+				1BE16EC314EB4BE600570A64 /* UIKit.framework */,
+				1BE16EC514EB4BE600570A64 /* Foundation.framework */,
+				1BE16EC714EB4BE600570A64 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1BE16EC914EB4BE600570A64 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1BE16EE414EB4CDB00570A64 /* Sample */,
+				1BE16EE514EB4CE400570A64 /* XBImageFilters */,
+				1BE16ED214EB4BE600570A64 /* AppDelegate.h */,
+				1BE16ED314EB4BE600570A64 /* AppDelegate.m */,
+				1BE16ED514EB4BE600570A64 /* MainStoryboard.storyboard */,
+				1BE16ECA14EB4BE600570A64 /* Supporting Files */,
+			);
+			name = Classes;
+			path = XBImageFilters;
+			sourceTree = "<group>";
+		};
+		1BE16ECA14EB4BE600570A64 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1BE16ECB14EB4BE600570A64 /* XBImageFilters-Info.plist */,
+				1BE16ECC14EB4BE600570A64 /* InfoPlist.strings */,
+				1BE16ECF14EB4BE600570A64 /* main.m */,
+				1BE16ED114EB4BE600570A64 /* XBImageFilters-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1BE16EE414EB4CDB00570A64 /* Sample */ = {
+			isa = PBXGroup;
+			children = (
+				1BE16EE614EB4D0900570A64 /* ImageViewController.h */,
+				1BE16EE714EB4D0900570A64 /* ImageViewController.m */,
+				1B4D52A31501A6AA007D743A /* CameraViewController.h */,
+				1B4D52A41501A6AA007D743A /* CameraViewController.m */,
+				3295F2101522EEC500C27406 /* ProcessingViewController.h */,
+				3295F2111522EEC500C27406 /* ProcessingViewController.m */,
+			);
+			name = Sample;
+			sourceTree = "<group>";
+		};
+		1BE16EE514EB4CE400570A64 /* XBImageFilters */ = {
+			isa = PBXGroup;
+			children = (
+				1BFA8BF616CFFB2F00BF4CAD /* Resources */,
+				1B231F851644693C00CBE9C9 /* GL */,
+				E2CC33DC1680736C003E60BE /* UIImage+XBImageFilters.h */,
+				E2CC33DD1680736C003E60BE /* UIImage+XBImageFilters.m */,
+				1BE37E311500FA5C0074D29C /* XBFilteredView.h */,
+				1BE37E321500FA5C0074D29C /* XBFilteredView.m */,
+				1BE16EE914EB4DD000570A64 /* XBFilteredImageView.h */,
+				1BE16EEA14EB4DD000570A64 /* XBFilteredImageView.m */,
+				1B4D52991501A188007D743A /* XBFilteredCameraView.h */,
+				1B4D529A1501A188007D743A /* XBFilteredCameraView.m */,
+				1BE99D0F1538A071001C532F /* CameraTargetView.h */,
+				1BE99D101538A071001C532F /* CameraTargetView.m */,
+			);
+			name = XBImageFilters;
+			sourceTree = "<group>";
+		};
+		1BE16EF214EB56EB00570A64 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1B675E6B14EE5D4B00ED8402 /* Shaders */,
+				1BE16EF314EB56EB00570A64 /* Images */,
+			);
+			name = Resources;
+			path = XBImageFilters/Resources;
+			sourceTree = "<group>";
+		};
+		1BE16EF314EB56EB00570A64 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				3295F2431523006F00C27406 /* png test set */,
+				1BE16EF414EB56EB00570A64 /* LucasCorrea.png */,
+				1BE16EF514EB56EB00570A64 /* LucasCorrea@2x.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		1BFA8BF616CFFB2F00BF4CAD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1BFA8BF716CFFB2F00BF4CAD /* DefaultFragmentShader.glsl */,
+				1BFA8BF816CFFB2F00BF4CAD /* DefaultVertexShader.glsl */,
+			);
+			name = Resources;
+			path = Classes/XBImageFilters/Resources;
+			sourceTree = "<group>";
+		};
+		3295F2431523006F00C27406 /* png test set */ = {
+			isa = PBXGroup;
+			children = (
+				3295F27D1523116700C27406 /* russian-ball.jpeg */,
+				3295F2411522FFDB00C27406 /* marvin.png */,
+				3295F2201522FD3100C27406 /* basn0g01.png */,
+				3295F2211522FD3100C27406 /* basn0g02.png */,
+				3295F2221522FD3100C27406 /* basn0g04.png */,
+				3295F2231522FD3100C27406 /* basn0g08.png */,
+				3295F2241522FD3100C27406 /* basn0g16.png */,
+				3295F2251522FD3100C27406 /* basn2c08.png */,
+				3295F2261522FD3100C27406 /* basn2c16.png */,
+				3295F2271522FD3100C27406 /* basn3p01.png */,
+				3295F2281522FD3100C27406 /* basn3p02.png */,
+				3295F2291522FD3100C27406 /* basn3p04.png */,
+				3295F22A1522FD3100C27406 /* basn3p08.png */,
+				3295F22B1522FD3100C27406 /* basn4a08.png */,
+				3295F22C1522FD3100C27406 /* basn4a16.png */,
+				3295F22D1522FD3100C27406 /* basn6a08.png */,
+				3295F22E1522FD3100C27406 /* basn6a16.png */,
+			);
+			name = "png test set";
+			sourceTree = "<group>";
+		};
+		E2CC33EA16807412003E60BE /* XBImageFilters */ = {
+			isa = PBXGroup;
+			children = (
+				E2CC33ED16807412003E60BE /* XBImageFilters.h */,
+				E2CC33EF16807412003E60BE /* XBImageFilters.m */,
+				E2CC33EB16807412003E60BE /* Supporting Files */,
+			);
+			path = XBImageFilters;
+			sourceTree = "<group>";
+		};
+		E2CC33EB16807412003E60BE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E2CC33EC16807412003E60BE /* XBImageFilters-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		E2CC341616807454003E60BE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2CC34171680745D003E60BE /* UIImage+XBImageFilters.h in Headers */,
+				E2CC34191680745D003E60BE /* (null) in Headers */,
+				E2CC341B1680745D003E60BE /* (null) in Headers */,
+				E2CC341D1680745D003E60BE /* (null) in Headers */,
+				E2CC341F1680745D003E60BE /* (null) in Headers */,
+				E2CC34211680745D003E60BE /* (null) in Headers */,
+				E2CC34231680745D003E60BE /* (null) in Headers */,
+				E2CC34251680745D003E60BE /* XBFilteredView.h in Headers */,
+				E2CC34271680745D003E60BE /* XBFilteredImageView.h in Headers */,
+				E2CC34291680745D003E60BE /* XBFilteredCameraView.h in Headers */,
+				E2CC342B1680745D003E60BE /* CameraTargetView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1BE16EBE14EB4BE600570A64 /* XBImageFiltersSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BE16EDD14EB4BE600570A64 /* Build configuration list for PBXNativeTarget "XBImageFiltersSample" */;
+			buildPhases = (
+				1BE16EBB14EB4BE600570A64 /* Sources */,
+				1BE16EBC14EB4BE600570A64 /* Frameworks */,
+				1BE16EBD14EB4BE600570A64 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XBImageFiltersSample;
+			productName = XBImageFilters;
+			productReference = 1BE16EBF14EB4BE600570A64 /* XBImageFiltersSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E2CC33E716807412003E60BE /* XBImageFilters */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2CC33F116807412003E60BE /* Build configuration list for PBXNativeTarget "XBImageFilters" */;
+			buildPhases = (
+				E2CC33E516807412003E60BE /* Frameworks */,
+				E2CC33E616807412003E60BE /* CopyFiles */,
+				E2CC341616807454003E60BE /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XBImageFilters;
+			productName = XBImageFilters;
+			productReference = E2CC33E816807412003E60BE /* libXBImageFilters.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1BE16EB614EB4BE500570A64 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+			};
+			buildConfigurationList = 1BE16EB914EB4BE500570A64 /* Build configuration list for PBXProject "XBImageFilters" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1BE16EB414EB4BE500570A64;
+			productRefGroup = 1BE16EC014EB4BE600570A64 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1BE16EBE14EB4BE600570A64 /* XBImageFiltersSample */,
+				E2CC33E716807412003E60BE /* XBImageFilters */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1BE16EBD14EB4BE600570A64 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B675E7214EE5DF300ED8402 /* LuminanceFragmentShader.glsl in Resources */,
+				1BE16ECE14EB4BE600570A64 /* InfoPlist.strings in Resources */,
+				1BE16ED714EB4BE600570A64 /* MainStoryboard.storyboard in Resources */,
+				1BE16EF614EB56EB00570A64 /* LucasCorrea.png in Resources */,
+				1BE16EF714EB56EB00570A64 /* LucasCorrea@2x.png in Resources */,
+				1BE4179214F92E5E00EB0ADD /* BlurFragmentShader.glsl in Resources */,
+				3295F22F1522FD3100C27406 /* basn0g01.png in Resources */,
+				3295F2301522FD3100C27406 /* basn0g02.png in Resources */,
+				3295F2311522FD3100C27406 /* basn0g04.png in Resources */,
+				3295F2321522FD3100C27406 /* basn0g08.png in Resources */,
+				3295F2331522FD3100C27406 /* basn0g16.png in Resources */,
+				3295F2341522FD3100C27406 /* basn2c08.png in Resources */,
+				3295F2351522FD3100C27406 /* basn2c16.png in Resources */,
+				3295F2361522FD3100C27406 /* basn3p01.png in Resources */,
+				3295F2371522FD3100C27406 /* basn3p02.png in Resources */,
+				3295F2381522FD3100C27406 /* basn3p04.png in Resources */,
+				3295F2391522FD3100C27406 /* basn3p08.png in Resources */,
+				3295F23A1522FD3100C27406 /* basn4a08.png in Resources */,
+				3295F23B1522FD3100C27406 /* basn4a16.png in Resources */,
+				3295F23C1522FD3100C27406 /* basn6a08.png in Resources */,
+				3295F23D1522FD3100C27406 /* basn6a16.png in Resources */,
+				3295F2421522FFDB00C27406 /* marvin.png in Resources */,
+				3295F27E1523116700C27406 /* russian-ball.jpeg in Resources */,
+				1BE20C621535BBCC00E9D595 /* DiscretizeShader.glsl in Resources */,
+				1BE20C641535C33900E9D595 /* PixelateShader.glsl in Resources */,
+				1BE20C661535C54F00E9D595 /* SuckShader.glsl in Resources */,
+				1B36A52D15A3C4AC00D297B1 /* OverlayFragmentShader.glsl in Resources */,
+				1BE8667115AB23B60058E8C7 /* OverlayVertexShader.glsl in Resources */,
+				1BEA547A15AB6D7800A5F430 /* VBlurVertexShader.glsl in Resources */,
+				1BEA547C15AB6E0000A5F430 /* HBlurVertexShader.glsl in Resources */,
+				1BEA549315ABC64800A5F430 /* UnsharpMaskFragmentShader.glsl in Resources */,
+				1BFA8BF916CFFB2F00BF4CAD /* DefaultFragmentShader.glsl in Resources */,
+				1BFA8BFA16CFFB2F00BF4CAD /* DefaultVertexShader.glsl in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1BE16EBB14EB4BE600570A64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BE16ED014EB4BE600570A64 /* main.m in Sources */,
+				1BE16ED414EB4BE600570A64 /* AppDelegate.m in Sources */,
+				1BE16EE814EB4D0900570A64 /* ImageViewController.m in Sources */,
+				1BE16EEB14EB4DD000570A64 /* XBFilteredImageView.m in Sources */,
+				1BE37E331500FA5C0074D29C /* XBFilteredView.m in Sources */,
+				1B4D529B1501A188007D743A /* XBFilteredCameraView.m in Sources */,
+				1B4D52A51501A6AA007D743A /* CameraViewController.m in Sources */,
+				3295F2131522EEC500C27406 /* ProcessingViewController.m in Sources */,
+				1BE99D111538A071001C532F /* CameraTargetView.m in Sources */,
+				1B231F941644693C00CBE9C9 /* XBGLEngine.m in Sources */,
+				1B231F951644693C00CBE9C9 /* XBGLProgram.m in Sources */,
+				1B231F961644693C00CBE9C9 /* XBGLShaderAttribute.m in Sources */,
+				1B231F971644693C00CBE9C9 /* XBGLShaderUniform.m in Sources */,
+				1B231F981644693C00CBE9C9 /* XBGLShaderVariable.m in Sources */,
+				1B231F991644693C00CBE9C9 /* XBGLTexture.m in Sources */,
+				1B36ACA61648346C00D5C9F6 /* XBGLRenderbuffer.m in Sources */,
+				1B36ACAA16483DAC00D5C9F6 /* XBGLFramebuffer.m in Sources */,
+				E2CC33DE1680736C003E60BE /* UIImage+XBImageFilters.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1BE16ECC14EB4BE600570A64 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1BE16ECD14EB4BE600570A64 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1BE16ED514EB4BE600570A64 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1BE16ED614EB4BE600570A64 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1BE16EDB14EB4BE600570A64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1BE16EDC14EB4BE600570A64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1BE16EDE14EB4BE600570A64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: DOAN MANH CUONG (853MED9H93)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "XBImageFilters/XBImageFilters-Prefix.pch";
+				INFOPLIST_FILE = "XBImageFilters/XBImageFilters-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "DBE7185D-3E46-4698-A321-461B91765A2F";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1BE16EDF14EB4BE600570A64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: DOAN MANH CUONG (853MED9H93)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "XBImageFilters/XBImageFilters-Prefix.pch";
+				INFOPLIST_FILE = "XBImageFilters/XBImageFilters-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "DBE7185D-3E46-4698-A321-461B91765A2F";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		E2CC33F216807412003E60BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				DSTROOT = /tmp/XBImageFilters.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "XBImageFilters/XBImageFilters-Prefix.pch";
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		E2CC33F316807412003E60BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				DSTROOT = /tmp/XBImageFilters.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "XBImageFilters/XBImageFilters-Prefix.pch";
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1BE16EB914EB4BE500570A64 /* Build configuration list for PBXProject "XBImageFilters" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BE16EDB14EB4BE600570A64 /* Debug */,
+				1BE16EDC14EB4BE600570A64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1BE16EDD14EB4BE600570A64 /* Build configuration list for PBXNativeTarget "XBImageFiltersSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BE16EDE14EB4BE600570A64 /* Debug */,
+				1BE16EDF14EB4BE600570A64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2CC33F116807412003E60BE /* Build configuration list for PBXNativeTarget "XBImageFilters" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2CC33F216807412003E60BE /* Debug */,
+				E2CC33F316807412003E60BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1BE16EB614EB4BE500570A64 /* Project object */;
+}
