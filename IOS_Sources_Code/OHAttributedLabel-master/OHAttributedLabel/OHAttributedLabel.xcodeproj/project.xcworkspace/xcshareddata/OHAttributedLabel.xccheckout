@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>086E5540-F764-4702-9A2C-9C3A92103E9C</string>
+	<key>IDESourceControlProjectName</key>
+	<string>OHAttributedLabel</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>A5B0D89F-2530-4E8E-A1BD-054C95FDA05F</key>
+		<string>https://github.com/KingspeedNg/IOS_Sources_Code.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>OHAttributedLabel-master/OHAttributedLabel/OHAttributedLabel.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>A5B0D89F-2530-4E8E-A1BD-054C95FDA05F</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/KingspeedNg/IOS_Sources_Code.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>A5B0D89F-2530-4E8E-A1BD-054C95FDA05F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>A5B0D89F-2530-4E8E-A1BD-054C95FDA05F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>IOS_Sources_Code</string>
+		</dict>
+	</array>
+</dict>
+</plist>
