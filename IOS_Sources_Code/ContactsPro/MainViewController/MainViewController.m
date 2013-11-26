@@ -96,6 +96,8 @@
     else {
         [self loadDataAddress];
     }
+    
+    self.navigationController.navigationBar.topItem.title = @"Back";
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -180,9 +182,29 @@
     return 40.f;
 }
 
-- (NSString*)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
-    return tableView == _tableAddress ? [[_listAddressBook objectAtIndex:section] objectAtIndex:0] : nil;
+    return section == 0 ? 20.f : 15.f;
+}
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
+{
+    return 0.0f;
+}
+
+//- (NSString*)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+//{
+//    return tableView == _tableAddress ? [[_listAddressBook objectAtIndex:section] objectAtIndex:0] : nil;
+//}
+- (UIView*)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    DLLabel *label = [_tableAddress dequeueReusableHeaderFooterViewWithIdentifier:@"Person Section Header"];
+    if (!label) {
+        label = [[DLLabel alloc] initWithFrame:[_tableAddress rectForHeaderInSection:section]];
+        label.backgroundColor = [UIColor clearColor];
+    }
+    label.text = tableView == _tableAddress ? [@"  " stringByAppendingString:[[_listAddressBook objectAtIndex:section] objectAtIndex:0]] : nil;
+    
+    return label;
 }
 
 - (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -192,7 +214,7 @@
         PersonCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
         if (!cell) {
             cell = [[PersonCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellIdentifier];
-            cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
+            cell.accessoryType = UITableViewCellAccessoryDetailButton;
         }
         
         [cell setBackgroundImageWith:tableView forIndexPath:indexPath];
@@ -230,6 +252,14 @@
             cell.textLabel.text = person.nameCompositeName;
         }
         
+        if (person.thumbnail) {
+            cell.imageView.image = person.thumbnail;
+        }
+        else {
+            cell.imageView.image = [UIImage imageNamed:@"iconPerson.png"];
+            cell.imageView.layer.cornerRadius = 6.5f;
+            cell.imageView.clipsToBounds = YES;
+        }
         //    cell.detailTextLabel.text = [person.phoneNumbers valuesStringWithSeparator:@","];
         
         return cell;
@@ -302,6 +332,7 @@
     personView.shouldShowLinkedPeople = YES;
     [self.navigationController pushViewController:personView animated:YES];
     [personView release];
+    
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
@@ -336,7 +367,8 @@
         [_actionSheet addButtonWithTitle:number];
     }
     [_actionSheet addButtonWithTitle:@"Cancel"];
-    
+    _actionSheet.cancelButtonIndex = _actionSheet.numberOfButtons - 1;
+    _actionSheet.actionSheetStyle = UIActionSheetStyleDefault;
     [_actionSheet showInView:self.view];
 }
 

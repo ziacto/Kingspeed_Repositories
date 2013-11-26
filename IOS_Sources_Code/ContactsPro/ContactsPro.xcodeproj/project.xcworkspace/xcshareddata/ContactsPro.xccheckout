@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>453C78D1-DC1F-4927-9320-3B5D9FFEA293</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ContactsPro</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>94D6CC38-36C3-40A5-9C97-EC88521E7F37</key>
+		<string>https://github.com/KingspeedNg/IOS_Sources_Code.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ContactsPro/ContactsPro.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>94D6CC38-36C3-40A5-9C97-EC88521E7F37</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/KingspeedNg/IOS_Sources_Code.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>94D6CC38-36C3-40A5-9C97-EC88521E7F37</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>94D6CC38-36C3-40A5-9C97-EC88521E7F37</string>
+			<key>IDESourceControlWCCName</key>
+			<string>IOS_Sources_Code</string>
+		</dict>
+	</array>
+</dict>
+</plist>

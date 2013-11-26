@@ -22,9 +22,9 @@
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
         // Initialization code
-        self.backgroundImageView = [[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"cell_bgr.png"]] autorelease];
-        self.backgroundView = self.backgroundImageView;
-        self.backgroundColor = [UIColor clearColor];
+//        self.backgroundImageView = [[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"cell_bgr.png"]] autorelease];
+//        self.backgroundView = self.backgroundImageView;
+//        self.backgroundColor = [UIColor clearColor];
     }
     return self;
 }
@@ -41,10 +41,10 @@
 {
     int numRows = [tblView numberOfRowsInSection:indexPath.section];
     if (numRows == 1 || indexPath.row == (numRows - 1)) {
-        self.backgroundImageView.image = [UIImage imageNamed:@"cell_bgr.png"];
+//        self.backgroundImageView.image = [UIImage imageNamed:@"cell_bgr.png"];
     }
     else {
-        self.backgroundImageView.image = [UIImage imageNamed:@"cell_bgr_mid.png"];
+//        self.backgroundImageView.image = [UIImage imageNamed:@"cell_bgr_mid.png"];
     }
 }
 

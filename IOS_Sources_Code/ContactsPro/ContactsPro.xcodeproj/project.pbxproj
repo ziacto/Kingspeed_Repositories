@@ -32,6 +32,8 @@
 		2168FDA3183B0B2400C57D84 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2168FDA1183B0B2400C57D84 /* AddressBook.framework */; };
 		2168FDA4183B0B2400C57D84 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2168FDA2183B0B2400C57D84 /* AddressBookUI.framework */; };
 		2168FDA6183B0BBA00C57D84 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2168FDA5183B0BBA00C57D84 /* CoreLocation.framework */; };
+		2179D8A718445E99009002A6 /* iconPerson.png in Resources */ = {isa = PBXBuildFile; fileRef = 2179D8A618445E99009002A6 /* iconPerson.png */; };
+		2179D8A918445F23009002A6 /* iconPerson@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2179D8A818445F23009002A6 /* iconPerson@2x.png */; };
 		21E84D38183C44DB004C146A /* Icon@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 21E84D37183C44DB004C146A /* Icon@2x~iphone.png */; };
 		21E84D49183C4C86004C146A /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 21E84D47183C4C86004C146A /* Icon.png */; };
 		21E84D4A183C4C86004C146A /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 21E84D48183C4C86004C146A /* Icon@2x.png */; };
@@ -97,6 +99,8 @@
 		2168FDA1183B0B2400C57D84 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		2168FDA2183B0B2400C57D84 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
 		2168FDA5183B0BBA00C57D84 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		2179D8A618445E99009002A6 /* iconPerson.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconPerson.png; sourceTree = "<group>"; };
+		2179D8A818445F23009002A6 /* iconPerson@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconPerson@2x.png"; sourceTree = "<group>"; };
 		21E84D37183C44DB004C146A /* Icon@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x~iphone.png"; sourceTree = "<group>"; };
 		21E84D47183C4C86004C146A /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		21E84D48183C4C86004C146A /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
@@ -139,6 +143,8 @@
 		11604B891547DC2E00E451AE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				2179D8A818445F23009002A6 /* iconPerson@2x.png */,
+				2179D8A618445E99009002A6 /* iconPerson.png */,
 				21E84D91183C6294004C146A /* cell_bgr_mid.png */,
 				21E84D92183C6294004C146A /* cell_bgr_mid@2x.png */,
 				21E84D8F183C5C85004C146A /* hStatusbar_IOS7@2x.png */,
@@ -328,10 +334,12 @@
 				21E84D93183C6294004C146A /* cell_bgr_mid.png in Resources */,
 				21E84D73183C5ADF004C146A /* cell_bgr.png in Resources */,
 				21E84D54183C519B004C146A /* Default@2x.png in Resources */,
+				2179D8A918445F23009002A6 /* iconPerson@2x.png in Resources */,
 				21E84D53183C519B004C146A /* Default.png in Resources */,
 				11DCA83F149886C400A83BAB /* MainViewController.xib in Resources */,
 				21038B45180BC2B700A42585 /* SubViewController.xib in Resources */,
 				21E84D94183C6294004C146A /* cell_bgr_mid@2x.png in Resources */,
+				2179D8A718445E99009002A6 /* iconPerson.png in Resources */,
 				21E84D90183C5C85004C146A /* hStatusbar_IOS7@2x.png in Resources */,
 				21E84D4C183C4FB8004C146A /* Default-568h@2x.png in Resources */,
 				11DCA840149886C400A83BAB /* InfoPlist.strings in Resources */,
