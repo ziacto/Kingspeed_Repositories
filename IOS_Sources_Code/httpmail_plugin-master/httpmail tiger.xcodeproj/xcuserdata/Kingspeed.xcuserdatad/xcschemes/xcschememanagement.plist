@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>AsyncHttpMailTester (Upgraded).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
+		<key>ICTester (Upgraded).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>Installer (Upgraded).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>Installer Panther (Copied).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
+		<key>POP (Upgraded).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>Transport Tester (Upgraded).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>12</integer>
+		</dict>
+		<key>httpPOP (Upgraded).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>httpmail 10.3 debug (Upgraded).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>8</integer>
+		</dict>
+		<key>httpmail 10.3 http debug (Upgraded).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>9</integer>
+		</dict>
+		<key>httpmail 10.4.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>13</integer>
+		</dict>
+		<key>httpmail 10.5.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>14</integer>
+		</dict>
+		<key>httpmail apple http debug (Upgraded).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>11</integer>
+		</dict>
+		<key>netsockethttp (Upgraded).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+		<key>transport (Upgraded).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+		<key>urltest (Copied).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>10</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>6547D542070794140090F5E2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>654CD4B206C605A500241101</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>654CD4C806C605A500241101</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>654CD4E306C605A500241101</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>654CD50206C605A500241101</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>654CD50F06C605A500241101</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>654CD51E06C605A500241101</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>654CD53606C605A500241101</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>654CD59A06C605A500241101</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>654CD5A806C605A500241101</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>654CD5F206C605A500241101</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>654CD63C06C605A500241101</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>654CD64306C605A500241101</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>654CD68D06C605A500241101</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6593A6B40CD6BF5900B6A595</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
